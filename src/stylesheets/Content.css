@@ -1,0 +1,11 @@
+.content-box{
+    min-height: 250px;
+}
+
+.content-box.light {
+    background: white;
+}
+
+.content-box.dark {
+    background: whitesmoke;
+}
