@@ -1,29 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 
 .navigation-wrapper {
     background-color: cadetblue;
-    height: 150px;
-    padding: 20px;
     color: white;
-    border: whitesmoke;
-    border-width: 1px;
 }
 
-.navigation-title{
-     font-family: 'Great Vibes', cursive;
-     font-size: 80px;
- }
+.navigation-titlebar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navigation-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+}
 
 a {
-    color:white;
+    color: white;
     text-decoration: none; /* no underline */
 }
 
-.navigation-hashtag{
-    font-family: 'Open Sans', sans-serif;
+.navigation-hashtag {
+
     font-size: 30px;
     font-style: normal;
+}
 
+.navigation-hashtag-text:hover {
+    color: lightblue;
+}
+
+.navigation-linkbar {
+    background: #fbfbfb;
+    border-bottom: solid lightgray 2px;
+    min-width: 100%;
+}
+
+.navigation-linkbar-container {
+    width: 75%;
+    min-height: inherit;
+    display: inline-flex;
+}
+
+.navigation-button {
+    width: 80px;
+    min-height: inherit;
+    margin: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navigation-button-text {
+    color: black;
+    font-size: medium;
+}
+
+.navigation-button-text:hover {
+    color: cadetblue;
 }
 

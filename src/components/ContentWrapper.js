@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../stylesheets/Content.css';
+import OurStory from "./content/OurStory";
 
 class ContentWrapper extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class ContentWrapper extends Component {
         return (
             <div className="content-wrapper">
                 <div className="content-box light">
-                    Our Story
+                    <OurStory/>
                 </div>
                 <div className="content-box dark">
                     Photo Album
