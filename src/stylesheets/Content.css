@@ -9,3 +9,21 @@
 .content-box.dark {
     background: #fbfbfb;
 }
+
+.content-ourstory{
+    height: 400px;
+    padding: 20px;
+}
+
+.content-ourstory-text{
+ text-align:left;
+}
+
+.content-ourstory-image-wrapper{
+    float: right;
+}
+
+.content-ourstory-image{
+    width:500px;
+    height:auto;
+}
