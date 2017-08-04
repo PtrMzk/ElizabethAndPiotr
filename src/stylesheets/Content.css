@@ -1,4 +1,4 @@
-.content-box{
+.content-box {
     min-height: 250px;
 }
 
@@ -14,7 +14,7 @@ h3 {
     background: #fbfbfb;
 }
 
-.content-block-wrapper{
+.content-block-wrapper {
     min-height: 100px;
     padding: 20px;
     max-width: 1200px;
@@ -23,55 +23,60 @@ h3 {
     overflow: auto;
 }
 
-.content-block-wrapper-padded
-{
+.content-block-wrapper-padded {
 
 }
 
-.content-block-text-left{
-    text-align:left;
+.content-block-wedding-day-details-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
 }
 
-.content-block-text-right{
-    text-align:right;
+.content-block-text-left {
+    text-align: left;
 }
 
-.content-block-text-center{
-    text-align:center;
+.content-block-text-right {
+    text-align: right;
 }
 
-.content-block-title{
+.content-block-text-center {
+    text-align: center;
+}
+
+.content-block-title {
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
     text-align: center;
 }
 
-.content-block-image-right{
+.content-block-image-right {
     float: right;
-    padding-left:20px;
+    padding-left: 20px;
 }
 
-.content-block-image-left{
+.content-block-image-left {
     float: left;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
-div[class*='content-block-image']{
+div[class*='content-block-image'] {
     padding-top: 67px;
 }
 
-.content-block-image-big-day{
+.content-block-image-big-day {
     width: 380px;
-    height:auto;
+    height: auto;
 
-    border-radius:8%;
-    overflow:hidden;
+    border-radius: 8%;
+    overflow: hidden;
 }
 
-.content-block-image-our-story{
+.content-block-image-our-story {
     width: 570px;
-    height:auto;
+    height: auto;
 
-    border-radius:5%;
-    overflow:hidden;
+    border-radius: 5%;
+    overflow: hidden;
 }
