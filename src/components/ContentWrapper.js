@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../stylesheets/Content.css';
 import OurStory from "./content/OurStory";
+import BigDay from "./content/BigDay";
+import WeddingOverview from "./content/WeddingOverview";
 
 class ContentWrapper extends Component {
     constructor(props) {
@@ -11,13 +13,13 @@ class ContentWrapper extends Component {
         return (
             <div className="content-wrapper">
                 <div className="content-box light">
-                    <OurStory/>
+                    <WeddingOverview/>
                 </div>
                 <div className="content-box dark">
-                    Photo Album
+                    <OurStory/>
                 </div>
                 <div className="content-box light">
-                    Wedding Information
+                    <BigDay/>
                 </div>
                 <div className="content-box dark">
                     Guestbook

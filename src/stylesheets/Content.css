@@ -2,6 +2,10 @@
     min-height: 250px;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 .content-box.light {
     background: white;
 }
@@ -10,20 +14,64 @@
     background: #fbfbfb;
 }
 
-.content-ourstory{
-    height: 400px;
+.content-block-wrapper{
+    min-height: 100px;
     padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
 }
 
-.content-ourstory-text{
- text-align:left;
+.content-block-wrapper-padded
+{
+
 }
 
-.content-ourstory-image-wrapper{
+.content-block-text-left{
+    text-align:left;
+}
+
+.content-block-text-right{
+    text-align:right;
+}
+
+.content-block-text-center{
+    text-align:center;
+}
+
+.content-block-title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.content-block-image-right{
     float: right;
+    padding-left:20px;
 }
 
-.content-ourstory-image{
-    width:500px;
+.content-block-image-left{
+    float: left;
+    padding-right:20px;
+}
+
+div[class*='content-block-image']{
+    padding-top: 67px;
+}
+
+.content-block-image-big-day{
+    width: 380px;
     height:auto;
+
+    border-radius:8%;
+    overflow:hidden;
+}
+
+.content-block-image-our-story{
+    width: 570px;
+    height:auto;
+
+    border-radius:5%;
+    overflow:hidden;
 }
