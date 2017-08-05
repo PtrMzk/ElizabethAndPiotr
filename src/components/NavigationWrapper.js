@@ -7,15 +7,19 @@ class NavigationWrapper extends Component {
     constructor(props) {
         super(props);
 
-        this.getLinkBarClassName = this.getLinkBarClassName.bind(this);
-
         this.state = {
             navigationButtons: [["Our Story", "OurStory"]
-                , ["Wedding Party", "WeddingParty"]
-                , ["Big Day Details", "BigDay"]
+                , ["Bridal Party", "WeddingParty"]
+                , ["Details", "BigDay"]
                 , ["Pictures", "Pictures"]
-                , ["Registry", "Registry"]]
-        }
+                , ["Registry", "Registry"]],
+            linkbarOffset: 0
+        };
+
+        this.handleScroll = this.handleScroll.bind(this);
+        this.getOffset = this.getOffset.bind(this);
+        this.componentDidMount = this.componentDidMount.bind(this);
+        this.componentWillUnmount = this.componentWillUnmount.bind(this);
     }
 
     renderNavigationButtons(navigationButton, i) {
@@ -24,26 +28,44 @@ class NavigationWrapper extends Component {
         )
     }
 
-    getLinkBarClassName()
-    {
-        const navigationLinkBar = "navigation-linkbar";
-        const frozen = "-frozen";
+    // handleScroll, getOffset, componentDidMount, componentWillUnmount based on: https://gist.github.com/Tybi/0c8ffb3d54df8a1c8966
+    handleScroll (){
+        const navigationLinkBarFrozen = "navigation-linkbar-frozen";
+        const navigationWrapperPadded = "navigation-wrapper-padded";
 
+        let linkbar = ReactDOM.findDOMNode(this.refs.linkbar);
+        let navigationWrapper = ReactDOM.findDOMNode(this.refs.navigationWrapper);
 
-        //fix: design based on this https://gist.github.com/Tybi/0c8ffb3d54df8a1c8966
-        //or https://github.com/thinhvo0108/react-sticky-dynamic-header/blob/master/src/index.js
-        if (window.pageYOffset > 100)
-        {
-            console.log("Setting NavBar to Frozen.");
-            return navigationLinkBar + frozen;
+        let windowsScrollTop  = window.pageYOffset;
+        if(windowsScrollTop >= this.state.linkbarOffset.top){
+            linkbar.classList.add(navigationLinkBarFrozen);
+            navigationWrapper.classList.add(navigationWrapperPadded);
+        }else{
+            linkbar.classList.remove(navigationLinkBarFrozen);
+            navigationWrapper.classList.remove(navigationWrapperPadded);
         }
-        else
-            return navigationLinkBar;
+    }
+
+    getOffset(element){
+        let bounding = element.getBoundingClientRect();
+        return {
+            top: bounding.top + document.body.scrollTop,
+            left: bounding.left + document.body.scrollLeft
+        };
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+        this.state.linkbarOffset = this.getOffset(this.refs.linkbar);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
     }
 
     render() {
         return (
-            <div className="navigation-wrapper">
+            <div className="navigation-wrapper" ref="navigationWrapper">
                 <div className="navigation-titlebar">
                     <div className="navigation-title">
                         Elizabeth and Piotr
@@ -53,7 +75,7 @@ class NavigationWrapper extends Component {
                            className="navigation-hashtag-text" target="_blank"> #MarryingMikolajczyk </a>
                     </div>
                 </div>
-                <div className={this.getLinkBarClassName()} ref="linkbar">
+                <div className="navigation-linkbar" ref="linkbar">
                     <div className="navigation-linkbar-container">
                         {this.state.navigationButtons.map(this.renderNavigationButtons)}
                     </div>

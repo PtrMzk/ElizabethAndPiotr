@@ -32,28 +32,20 @@ class WeddingOverview extends Component {
 
     render() {
         return (
-            <div className="content-block-wrapper content-block-wrapper-padded">
+            <div className="content-block-wrapper" ref="ourWeddingDay">
                 <div className="content-block-text-center">
                     <div className="content-block-title">
                         Our Wedding Day
                     </div>
-                    <table className="content-block-wedding-day-details-table">
-                        <tr>
-                            <td><h3>Date</h3>
-                                Saturday, November 3, 2018
-                                <br/>5:00 PM
-                            </td>
-                            <td>
-                                <h3>Ceremony and Reception</h3>
-                                The Olde Mill Inn
-                                <br/>225 Route 202 Basking Ridge, NJ 07920
-                                <br/>800-585-4461 | 908-221-1100
-                            </td>
-                        </tr>
-                    </table>
 
+                    <h3>Date</h3>
+                    Saturday, November 3, 2018
+                    <br/>5:00 PM
 
-
+                    <h3>Ceremony and Reception</h3>
+                    The Olde Mill Inn
+                    <br/>225 Route 202 Basking Ridge, NJ 07920
+                    <br/>800-585-4461 | 908-221-1100
 
                     <br/> <h1> {this.state.daysToWedding} {this.state.daysToWedding === 1 ? "Day" : "Days"} to
                     go!!!</h1>

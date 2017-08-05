@@ -5,14 +5,13 @@
     color: white;
 }
 
+.navigation-wrapper-padded {
+    padding-bottom: 70px;
+}
+
 .navigation-titlebar {
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-.navigation-title {
-    font-family: 'Great Vibes', cursive;
-    font-size: 80px;
 }
 
 a {
@@ -38,35 +37,84 @@ a {
     background: #fbfbfb;
     border-bottom: solid lightgray 2px;
     min-width: 100%;
-    opacity: .95;
+    opacity: .90;
 }
 
-.navigation-linkbar-frozen {
-    position:fixed;
-}
 
-.navigation-linkbar-container {
-    width: 75%;
-    min-height: inherit;
-    display: inline-flex;
-}
 
-.navigation-button {
-    width: 120px;
-    min-height: inherit;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.navigation-button-text {
-    color: black;
-    font-size: medium;
-}
 
 .navigation-button-text:hover {
     color: cadetblue;
 }
+
+@media (min-width: 800px) {
+    .navigation-title {
+        font-family: 'Great Vibes', cursive;
+        font-size: 80px;
+    }
+
+    .navigation-button-text {
+        color: black;
+        font-size: medium;
+    }
+
+    .navigation-linkbar-frozen {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+    .navigation-button {
+        width: 120px;
+        min-height: inherit;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navigation-linkbar-container {
+        width: 75%;
+        min-height: inherit;
+        display: inline-flex;
+    }
+
+
+}
+
+@media (max-width: 799px) {
+    .navigation-title {
+        font-family: 'Great Vibes', cursive;
+        font-size: 50px;
+    }
+
+    .navigation-button-text {
+        color: black;
+        font-size: small;
+    }
+
+    .navigation-linkbar-frozen {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        font-size: small;
+    }
+    .navigation-button {
+        width: 100px;
+        min-height: inherit;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .navigation-linkbar-container {
+        width: 400px;
+        min-height: inherit;
+        display: inline-flex;
+        padding: auto;
+    }
+
+
+}
+
 

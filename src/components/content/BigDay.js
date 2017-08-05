@@ -20,11 +20,11 @@ class BigDay extends Component {
                     </div>
 
                     We would like to thank you all so much for journeying to celebrate this special day with us - especially all of our out of town guests!
-                    We know what traveling entails and can not express how much this means to us! We are so greatly looking forward to celebrating our love with you! <br/>
+                    We know what traveling entails and can not express how much this means to us! We are so greatly looking forward to celebrating our love with you!
 
 
                     <br/><h3>Accommodations</h3>
-                    We have reserved a block of rooms at The Olde Mill Inn! You can reserve a room using the link below or by calling the hotel and asking to reserve a room for the Lipman-Mikolajczyk Wedding!
+                    We have reserved a block of rooms at The Olde Mill Inn! You can reserve a room by calling the hotel and asking for the Lipman-Mikolajczyk Wedding! Please be advised that we have a limited number of rooms and strongly encourage you to book early in order to guarantee a spot in this hotel!
 
                     <br/><h3>Transportation</h3>
                     Public transportation:

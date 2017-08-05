@@ -14,18 +14,6 @@ h3 {
     background: #fbfbfb;
 }
 
-.content-block-wrapper {
-    min-height: 100px;
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: auto;
-}
-
-.content-block-wrapper-padded {
-
-}
 
 .content-block-wedding-day-details-table {
     margin-left: auto;
@@ -33,13 +21,7 @@ h3 {
     width: 700px;
 }
 
-.content-block-text-left {
-    text-align: left;
-}
 
-.content-block-text-right {
-    text-align: right;
-}
 
 .content-block-text-center {
     text-align: center;
@@ -51,32 +33,93 @@ h3 {
     text-align: center;
 }
 
-.content-block-image-right {
-    float: right;
-    padding-left: 20px;
-}
-
-.content-block-image-left {
-    float: left;
-    padding-right: 20px;
-}
 
 div[class*='content-block-image'] {
     padding-top: 67px;
 }
 
-.content-block-image-big-day {
-    width: 380px;
-    height: auto;
+@media (min-width: 800px){
+    .content-block-image-right {
+        float: right;
+        padding-left: 20px;
+    }
 
-    border-radius: 8%;
-    overflow: hidden;
+    .content-block-image-left {
+        float: left;
+        padding-right: 20px;
+    }
+    .content-block-text-left {
+        text-align: left;
+    }
+
+    .content-block-text-right {
+        text-align: right;
+    }
+    .content-block-image-big-day {
+        width: 380px;
+        height: auto;
+
+        border-radius: 8%;
+        overflow: hidden;
+    }
+
+    .content-block-image-our-story {
+        width: 570px;
+        height: auto;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+    .content-block-wrapper {
+        min-height: 100px;
+        padding: 20px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        -webkit-text-size-adjust: auto;
+    }
 }
 
-.content-block-image-our-story {
-    width: 570px;
-    height: auto;
 
-    border-radius: 5%;
-    overflow: hidden;
+@media (max-width: 799px) {
+    .content-block-image-right {
+        float: top;
+        text-align: center;
+    }
+
+    .content-block-image-left {
+        float: top;
+        text-align: center;
+    }
+    .content-block-text-left {
+        text-align: left;
+    }
+
+    .content-block-text-right {
+        text-align: left;
+    }
+    .content-block-image-big-day {
+        width: 300px;
+        height: auto;
+
+        border-radius: 8%;
+        overflow: hidden;
+    }
+
+    .content-block-image-our-story {
+        width: 300px;
+        height: auto;
+
+        border-radius: 5%;
+        overflow: hidden;
+    }
+    .content-block-wrapper {
+        min-height: 100px;
+        padding: 20px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+    }
+
 }
