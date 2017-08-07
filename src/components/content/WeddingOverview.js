@@ -5,33 +5,50 @@ class WeddingOverview extends Component {
     constructor(props) {
         super(props);
         this.getDaysToWedding = this.getDaysToWedding.bind(this);
-        this.state = {
-            daysToWedding: this.getDaysToWedding()
-        }
-        ;
+        this.getCountdownMessage = this.getCountdownMessage.bind(this);
     }
 
     getDaysToWedding() {
-        var days = 0;
-        var difference = 0;
+        let days = 0;
+        let difference = 0;
 
-        var weddingDay = new Date("2018-11-03");
+        let weddingDay = new Date(2018, 11, 3, 0, 0, 0, 0);
 
-        var today = new Date();
-        //var today = new Date("2018-11-04");
+        let today = new Date();
 
         difference = weddingDay - today;
 
-        days = Math.round(difference / (1000 * 60 * 60 * 24));
+        days = Math.ceil(difference / (1000 * 60 * 60 * 24));
 
-        if (days > 0)
-            return days;
-        else
-            return 0;
+        return days;
+    }
+
+    getCountdownMessage(daysToWedding) {
+        let countdownMessage = "";
+
+        if (daysToWedding > 1) {
+            countdownMessage = (daysToWedding + " days to go!!");
+        }
+        else if (daysToWedding === 1) {
+            countdownMessage = (daysToWedding + " day to go!");
+        }
+        else if (daysToWedding === 0) {
+            countdownMessage = "Today is the day!";
+        }
+        else {
+            countdownMessage = "Thank you for celebrating our love with us!";
+        }
+
+        return countdownMessage;
     }
 
     render() {
+        let daysToWedding = this.getDaysToWedding();
+        let countdownMessage = this.getCountdownMessage(daysToWedding);
+
+
         return (
+
             <div className="content-block-wrapper" ref="ourWeddingDay">
                 <div className="content-block-text-center">
                     <div className="content-block-title">
@@ -47,8 +64,9 @@ class WeddingOverview extends Component {
                     <br/>225 Route 202 Basking Ridge, NJ 07920
                     <br/>800-585-4461 | 908-221-1100
 
-                    <br/> <h1> {this.state.daysToWedding} {this.state.daysToWedding === 1 ? "Day" : "Days"} to
-                    go!!!</h1>
+                    <br/> <h1>
+                    {countdownMessage}
+                </h1>
                 </div>
             </div>
         );

@@ -3,13 +3,14 @@ import '../stylesheets/Navigation.css';
 import NavigationButton from "./NavigationButton";
 import ReactDOM from 'react-dom';
 
+
 class NavigationWrapper extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             navigationButtons: [["Our Story", "OurStory"]
-                , ["Bridal Party", "WeddingParty"]
+                , ["Bridal Party", "BridalParty"]
                 , ["Details", "BigDay"]
                 , ["Pictures", "Pictures"]
                 , ["Registry", "Registry"]],
@@ -35,15 +36,17 @@ class NavigationWrapper extends Component {
 
         let linkbar = ReactDOM.findDOMNode(this.refs.linkbar);
         let navigationWrapper = ReactDOM.findDOMNode(this.refs.navigationWrapper);
+        let linkbarOffset = this.state.linkbarOffset;
 
         let windowsScrollTop  = window.pageYOffset;
-        if(windowsScrollTop >= this.state.linkbarOffset.top){
+        if(windowsScrollTop >= linkbarOffset.top){
             linkbar.classList.add(navigationLinkBarFrozen);
             navigationWrapper.classList.add(navigationWrapperPadded);
         }else{
             linkbar.classList.remove(navigationLinkBarFrozen);
             navigationWrapper.classList.remove(navigationWrapperPadded);
         }
+
     }
 
     getOffset(element){
@@ -55,8 +58,12 @@ class NavigationWrapper extends Component {
     }
 
     componentDidMount() {
+        let linkbarOffset = this.getOffset(this.refs.linkbar);
         window.addEventListener('scroll', this.handleScroll);
-        this.state.linkbarOffset = this.getOffset(this.refs.linkbar);
+
+        this.setState((prevState, props) => ({
+            linkbarOffset: linkbarOffset
+        }));
     }
 
     componentWillUnmount() {
@@ -72,7 +79,7 @@ class NavigationWrapper extends Component {
                     </div>
                     <div className="navigation-hashtag">
                         <a href="https://www.instagram.com/explore/tags/marryingmikolajczyk/"
-                           className="navigation-hashtag-text" target="_blank"> #MarryingMikolajczyk </a>
+                           className="navigation-hashtag-text" target="_blank" rel="noopener noreferrer"> #MarryingMikolajczyk </a>
                     </div>
                 </div>
                 <div className="navigation-linkbar" ref="linkbar">

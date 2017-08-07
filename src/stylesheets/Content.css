@@ -1,5 +1,7 @@
 .content-box {
-    min-height: 250px;
+    min-height: 350px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 h3 {
@@ -38,6 +40,10 @@ div[class*='content-block-image'] {
     padding-top: 67px;
 }
 
+.content-block-bridal-party-table-text{
+    text-align: left;
+}
+
 @media (min-width: 800px){
     .content-block-image-right {
         float: right;
@@ -69,6 +75,13 @@ div[class*='content-block-image'] {
         border-radius: 5%;
         overflow: hidden;
     }
+    .content-block-image-bridal-party {
+        width: auto;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
     .content-block-wrapper {
         min-height: 100px;
         padding: 20px;
@@ -111,6 +124,12 @@ div[class*='content-block-image'] {
         height: auto;
 
         border-radius: 5%;
+        overflow: hidden;
+    }
+    .content-block-image-bridal-party {
+        width: auto;
+        height: 200px;
+        border-radius: 50%;
         overflow: hidden;
     }
     .content-block-wrapper {
