@@ -13,7 +13,7 @@ class OurStory extends Component {
                 <div className="content-block-text-left">
                     <div className="content-block-image-right">
                         <img src={OurStoryImage}
-                             className="content-block-image-our-story" alt="Liz and Piotr in Black and White"/>
+                             className="content-block-image-our-story" alt="Liz and Piotr by a brick wall"/>
                     </div>
                     <div className="content-block-title">
                         Our Story

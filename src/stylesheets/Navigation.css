@@ -40,6 +40,18 @@ a {
     opacity: .90;
 }
 
+.navigation-footer {
+    background-color: cadetblue;
+    border-top: solid lightgray 2px;
+    color: white;
+    min-width: 100%;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
 
 
 

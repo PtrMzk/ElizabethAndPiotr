@@ -9,12 +9,14 @@ class NavigationWrapper extends Component {
         super(props);
 
         this.state = {
-            navigationButtons: [["Our Story", "OurStory"]
-                , ["Bridal Party", "BridalParty"]
+            navigationButtons: [
+                ["Overview", "Overview"]
+                , ["Our Story", "OurStory"]
                 , ["Details", "BigDay"]
+                , ["Bridal Party", "BridalParty"]
                 , ["Pictures", "Pictures"]
-                , ["Registry", "Registry"]],
-            linkbarOffset: 0
+                , ["Registries", "Registries"]]
+            , linkbarOffset: 0
         };
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -30,7 +32,7 @@ class NavigationWrapper extends Component {
     }
 
     // handleScroll, getOffset, componentDidMount, componentWillUnmount based on: https://gist.github.com/Tybi/0c8ffb3d54df8a1c8966
-    handleScroll (){
+    handleScroll() {
         const navigationLinkBarFrozen = "navigation-linkbar-frozen";
         const navigationWrapperPadded = "navigation-wrapper-padded";
 
@@ -38,18 +40,18 @@ class NavigationWrapper extends Component {
         let navigationWrapper = ReactDOM.findDOMNode(this.refs.navigationWrapper);
         let linkbarOffset = this.state.linkbarOffset;
 
-        let windowsScrollTop  = window.pageYOffset;
-        if(windowsScrollTop >= linkbarOffset.top){
+        let windowsScrollTop = window.pageYOffset;
+        if (windowsScrollTop >= linkbarOffset.top) {
             linkbar.classList.add(navigationLinkBarFrozen);
             navigationWrapper.classList.add(navigationWrapperPadded);
-        }else{
+        } else {
             linkbar.classList.remove(navigationLinkBarFrozen);
             navigationWrapper.classList.remove(navigationWrapperPadded);
         }
 
     }
 
-    getOffset(element){
+    getOffset(element) {
         let bounding = element.getBoundingClientRect();
         return {
             top: bounding.top + document.body.scrollTop,
@@ -79,7 +81,8 @@ class NavigationWrapper extends Component {
                     </div>
                     <div className="navigation-hashtag">
                         <a href="https://www.instagram.com/explore/tags/marryingmikolajczyk/"
-                           className="navigation-hashtag-text" target="_blank" rel="noopener noreferrer"> #MarryingMikolajczyk </a>
+                           className="navigation-hashtag-text" target="_blank" rel="noopener noreferrer">
+                            #MarryingMikolajczyk </a>
                     </div>
                 </div>
                 <div className="navigation-linkbar" ref="linkbar">
