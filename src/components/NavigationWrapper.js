@@ -14,8 +14,9 @@ class NavigationWrapper extends Component {
                 , ["Our Story", "OurStory"]
                 , ["Details", "BigDay"]
                 , ["Bridal Party", "BridalParty"]
-                , ["Pictures", "Pictures"]
-                , ["Registries", "Registries"]]
+                , ["Registries", "Registries"]
+                , ["Pictures", "PhotoGallery"]
+            ]
             , linkbarOffset: 0
         };
 

@@ -13,7 +13,7 @@ class BigDay extends Component {
                 <div className="content-block-text-left">
                     <div className="content-block-image-left">
                         <img src={BigDayImage}
-                             className="content-block-image-big-day" alt="Liz and Piotr in Black and White"/>
+                             className="content-block-image-big-day content-block-image-rounded" alt="Liz and Piotr in Black and White"/>
                     </div>
                     <div className="content-block-title">
                         Big Day Details

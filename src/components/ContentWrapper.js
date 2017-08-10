@@ -7,6 +7,7 @@ import {Route} from "react-router-dom";
 import * as ReactDOM from "react-dom";
 import BridalParty from "./content/BridalParty";
 import Registries from "./content/Registries";
+import PhotoGallery from "./content/PhotoGallery";
 
 class ContentWrapper extends Component {
     constructor(props) {
@@ -43,6 +44,9 @@ class ContentWrapper extends Component {
             else if (scrollTarget === "Registries") {
                 scrollTargetNode = ReactDOM.findDOMNode(this.refs.Registries);
             }
+            else if (scrollTarget === "PhotoGallery") {
+                scrollTargetNode = ReactDOM.findDOMNode(this.refs.PhotoGallery);
+            }
 
             let scrollTargetOffset = this.getOffset(scrollTargetNode);
             let scrollTargetY = scrollTargetOffset.top > scrollOffset ? scrollTargetOffset.top - scrollOffset : scrollOffset;
@@ -77,6 +81,9 @@ class ContentWrapper extends Component {
                 </div>
                 <div className="content-box light">
                 <Registries ref="Registries"/>
+                </div>
+                <div className="content-box dark">
+                    <PhotoGallery ref="PhotoGallery"/>
                 </div>
             </div>
         );

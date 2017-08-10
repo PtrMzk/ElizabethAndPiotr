@@ -29,6 +29,11 @@ td{
     margin-right: auto;
 }
 
+.content-block-image-rounded{
+    border-radius: 5%;
+    overflow: hidden;
+}
+
 .content-block-text-center {
     text-align: center;
 }
@@ -48,6 +53,10 @@ div[class*='content-block-image'] {
     text-align: left;
     vertical-align: top;
     display: inline-block;
+}
+
+.content-block-image-photo-gallery{
+    height: 500px;
 }
 
 @media (min-width: 800px){
@@ -77,15 +86,12 @@ div[class*='content-block-image'] {
         width: 380px;
         height: auto;
 
-        border-radius: 8%;
-        overflow: hidden;
     }
 
     .content-block-image-our-story {
         width: 570px;
         height: auto;
-        border-radius: 5%;
-        overflow: hidden;
+
     }
     .content-block-image-bridal-party {
         width: auto;
@@ -96,8 +102,6 @@ div[class*='content-block-image'] {
     .content-block-image-registries {
         width: 500px;
         height: auto;
-        border-radius: 5%;
-        overflow: hidden;
     }
 
     .content-block-wrapper {
@@ -146,9 +150,6 @@ div[class*='content-block-image'] {
     .content-block-image-our-story {
         width: 300px;
         height: auto;
-
-        border-radius: 5%;
-        overflow: hidden;
     }
     .content-block-image-bridal-party {
         width: auto;
@@ -159,8 +160,6 @@ div[class*='content-block-image'] {
     .content-block-image-registries {
         width: 400px;
         height: auto;
-        border-radius: 5%;
-        overflow: hidden;
     }
 
     .content-block-wrapper {

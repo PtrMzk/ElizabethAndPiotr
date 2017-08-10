@@ -13,7 +13,7 @@ class Registries extends Component {
                 <div className="content-block-text-center">
                     <div className="content-block-image-left">
                         <img src={RegistriesImage}
-                             className="content-block-image-registries"
+                             className="content-block-image-registries content-block-image-rounded"
                              alt="Liz and Piotr gazing into each other's eyes"/>
                     </div>
                     <div className="content-block-title">
