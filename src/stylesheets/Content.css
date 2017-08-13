@@ -55,15 +55,13 @@ div[class*='content-block-image'] {
     display: inline-block;
 }
 
-.content-block-image-photo-gallery{
-    height: 500px;
-}
+
 
 @media (min-width: 800px){
     .content-box {
         min-height: 350px;
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 
     .content-block-image-right {
@@ -112,6 +110,9 @@ div[class*='content-block-image'] {
         margin-right: auto;
         overflow: auto;
         -webkit-text-size-adjust: auto;
+    }
+    .content-block-image-photo-gallery{
+        height: 500px;
     }
 }
 
@@ -169,6 +170,9 @@ div[class*='content-block-image'] {
         margin-left: auto;
         margin-right: auto;
         overflow: auto;
+    }
+    .content-block-image-photo-gallery{
+        height: 250px;
     }
 
 }

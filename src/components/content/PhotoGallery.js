@@ -27,8 +27,7 @@ class PhotoGallery extends Component {
                 , new this.ImageWrapper(NJBoardwalk2008, "Piotr loves Elizabeth's smile and is continually thinking of new ways to see it.", 2008)
                 , new this.ImageWrapper(ApplePicking2008, "Elizabeth loves Piotr's quick wit and endless affection.", 2008)
                 , new this.ImageWrapper(Snowball2010, "The two like to debate who actually made the first move. The verdict is still out...", 2009)
-                , new this.ImageWrapper(Bruins2011, "Piotr brought Elizabeth to her first college hockey game and later introduced her to the Bruins." +
-                    " Here they are celebrating the Bruin's Stanley Cup win!", 2011)
+                , new this.ImageWrapper(Bruins2011, "Piotr brought Elizabeth to her first college hockey game and later introduced her to the Bruins.", 2011)
                 , new this.ImageWrapper(Anniversary2011, "The couple began officially dating on March 22, 2011", 2011)
                 , new this.ImageWrapper(EzeParty2012, "From kegs to cocktails, the couple learn to adjust to life outside of college.", 2012)
                 , new this.ImageWrapper(March2012, "Elizabeth surprised Piotr with front row tickets to celebrate their first anniversary.", 2012)
