@@ -51,6 +51,8 @@ class ContentWrapper extends Component {
             let scrollTargetOffset = this.getOffset(scrollTargetNode);
             let scrollTargetY = scrollTargetOffset.top > scrollOffset ? scrollTargetOffset.top - scrollOffset : scrollOffset;
 
+            scrollTargetY += window.screen.width < 800 ? 450 : 0; //fix for iphone
+
             window.scrollTo(0, scrollTargetY);
         }
     }
