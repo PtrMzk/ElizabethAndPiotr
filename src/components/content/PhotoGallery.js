@@ -23,22 +23,22 @@ class PhotoGallery extends Component {
 
         this.state = {
             images: [
-                new this.ImageWrapper(WestF2007, "Liz & Piotr first meet at a party he threw to celebrate the start of college.", 2007)
+                new this.ImageWrapper(WestF2007, "Liz & Piotr first met at a party he threw to celebrate the start of college.", 2007)
                 , new this.ImageWrapper(NJBoardwalk2008, "Piotr loves Elizabeth's smile and is continually thinking of new ways to see it.", 2008)
                 , new this.ImageWrapper(ApplePicking2008, "Elizabeth loves Piotr's quick wit and endless affection.", 2008)
-                , new this.ImageWrapper(Snowball2010, "The two like to debate who actually made the first move. The verdict is still out...", 2009)
-                , new this.ImageWrapper(Bruins2011, "Piotr brought Elizabeth to her first college hockey game and later introduced her to the Bruins.", 2011)
+                , new this.ImageWrapper(Snowball2010, "After meeting, the two remained close friends throughout college.", 2009)
+                , new this.ImageWrapper(Bruins2011, "Piotr brought Elizabeth to the Bruins! " +
+                    "They celebrated the team's Stanley Cup win with a dip in the Reflection Pool.", 2011)
                 , new this.ImageWrapper(Anniversary2011, "The couple began officially dating on March 22, 2011", 2011)
-                , new this.ImageWrapper(EzeParty2012, "From kegs to cocktails, the couple learn to adjust to life outside of college.", 2012)
-                , new this.ImageWrapper(March2012, "Elizabeth surprised Piotr with front row tickets to celebrate their first anniversary.", 2012)
-                , new this.ImageWrapper(Vegas2013, "The couple take their first vacation together to Las Vegas!", 2013)
+                , new this.ImageWrapper(EzeParty2012, "From kegs to cocktails, the couple quickly learned to adjust to life outside of college.", 2012)
+                , new this.ImageWrapper(March2012, "To celebrate their first anniversary, Elizabeth surprised Piotr with front row tickets to see their favorite team.", 2012)
+                , new this.ImageWrapper(Vegas2013, "Their first vacation together as a couple was to Las Vegas!", 2013)
                 , new this.ImageWrapper(Beanpot2013, "Always happy to return to campus, the couple frequently attend Northeastern Alumni events.", 2013)
                 , new this.ImageWrapper(Graduation2014, "Piotr was Elizabeth's biggest supporter throughout graduate school.", 2014)
                 , new this.ImageWrapper(Brooklyner2015, "The couple move to Brooklyn! One of their favorite things to do is enjoy the view from their roof deck.", 2015)
-                , new this.ImageWrapper(PopPop90th2016, "Celebrating ", 2016)
-                , new this.ImageWrapper(ApplePicking2016, "apple picing 2016", 2016)
-                , new this.ImageWrapper(FranklinWedding2017, "FranklinWedding", 2017)
-
+                , new this.ImageWrapper(PopPop90th2016, "Celebrating Liz's grandfather's 90th birthday party!", 2016)
+                , new this.ImageWrapper(ApplePicking2016, "Liz and Piotr look forward to going apple picking every fall!", 2016)
+                , new this.ImageWrapper(FranklinWedding2017, "Celebrating their friend's wedding! ", 2017)
             ]
             , currentImageIndex: 0
         };
@@ -100,16 +100,20 @@ class PhotoGallery extends Component {
                     <div className="content-block-title">
                         Photo Gallery
                     </div>
-
                     <img src={this.getImage()}
                          className="content-block-image-photo-gallery content-block-image-rounded"
                          alt={this.getCaption()}/>
-                    <h3>{this.getCaption()}</h3>
+                    <div className="content-block-text-photo-gallery-caption">
+                        {this.getCaption()}
+                    </div>
                     <br/>
                     <input type="range" min="0" max={this.state.images.length - 1} step="1"
                            value={this.state.currentImageIndex} onChange={event => this.setImage(event)}/>
                     <br/>
-                    <h1>{this.getYear()}</h1>
+
+                    <div className="content-block-text-photo-gallery-year">
+                        {this.getYear()}
+                    </div>
                 </div>
             </div>
         );

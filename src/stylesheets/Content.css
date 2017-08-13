@@ -10,9 +10,17 @@ h3 {
     background: #fbfbfb;
 }
 
+.content-block-padded-cell{
+    padding-top: 50px;
+}
+
 td{
     width:50%;
     vertical-align: top;
+}
+
+a:hover{
+    color: cadetblue;
 }
 
 .content-block-wedding-day-details-table {
@@ -20,6 +28,8 @@ td{
     margin-right: auto;
     width: 700px;
 }
+
+
 
 .content-block-registries-table {
     min-width: 100%;
@@ -38,12 +48,9 @@ td{
     text-align: center;
 }
 
-.content-block-title {
-    font-family: 'Great Vibes', cursive;
-    font-size: 50px;
-    text-align: center;
+.content-block-title-cats-of-honor{
+    padding-top: 120px;
 }
-
 
 div[class*='content-block-image'] {
     padding-top: 67px;
@@ -55,9 +62,21 @@ div[class*='content-block-image'] {
     display: inline-block;
 }
 
+.content-block-registries-amazon{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center
+}
+
 
 
 @media (min-width: 800px){
+    .content-block-title {
+        font-family: 'Great Vibes', cursive;
+        font-size: 70px;
+        text-align: center;
+    }
+
     .content-box {
         min-height: 350px;
         padding-top: 200px;
@@ -81,9 +100,8 @@ div[class*='content-block-image'] {
         text-align: right;
     }
     .content-block-image-big-day {
-        width: 380px;
+        width: 420px;
         height: auto;
-
     }
 
     .content-block-image-our-story {
@@ -114,14 +132,39 @@ div[class*='content-block-image'] {
     .content-block-image-photo-gallery{
         height: 500px;
     }
+    .content-block-bridal-party-mobile-tables{
+        display: none;
+    }
+    .content-block-text-photo-gallery-caption{
+        min-height: 70px;
+        font-size: x-large;
+    }
+    .content-block-text-photo-gallery-year{
+        padding-top: 30px;
+        min-height: 70px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .content-block-text-registry-link{
+        padding-top: 10px;
+        padding-bottom:10px;
+        font-size: xx-large;
+        font-weight: bold;
+    }
 }
 
 
 @media (max-width: 799px) {
     .content-box {
         min-height: 350px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .content-block-title {
+        font-family: 'Great Vibes', cursive;
+        font-size: 55px;
+        text-align: center;
     }
 
     .content-block-image-right {
@@ -141,7 +184,7 @@ div[class*='content-block-image'] {
         text-align: left;
     }
     .content-block-image-big-day {
-        width: 300px;
+        width: 200px;
         height: auto;
 
         border-radius: 8%;
@@ -149,7 +192,7 @@ div[class*='content-block-image'] {
     }
 
     .content-block-image-our-story {
-        width: 300px;
+        width: 200px;
         height: auto;
     }
     .content-block-image-bridal-party {
@@ -159,7 +202,7 @@ div[class*='content-block-image'] {
         overflow: hidden;
     }
     .content-block-image-registries {
-        width: 400px;
+        width: 200px;
         height: auto;
     }
 
@@ -172,7 +215,27 @@ div[class*='content-block-image'] {
         overflow: auto;
     }
     .content-block-image-photo-gallery{
-        height: 250px;
+        height: 200px;
+    }
+
+    .content-block-bridal-party-desktop-tables{
+        display: none;
+    }
+    .content-block-text-photo-gallery-caption{
+        min-height: 75px;
+        font-size: medium;
+    }
+    .content-block-text-photo-gallery-year{
+        padding-top: 10px;
+        min-height: 40px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .content-block-text-registry-link{
+        padding-top: 10px;
+        padding-bottom:10px;
+        font-size: large;
+        font-weight: bold;
     }
 
 }

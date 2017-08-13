@@ -20,7 +20,7 @@ class BigDay extends Component {
                     </div>
 
                     We would like to thank you all so much for journeying to celebrate this special day with us - especially all of our out of town guests!
-                    We know what traveling entails and can not express how much this means to us! We are so greatly looking forward to celebrating our love with you!
+                    We know all that traveling entails and can not express how much this means to us! We are so greatly looking forward to celebrating our love with you!
 
 
                     <br/><h3>Accommodations</h3>
@@ -28,7 +28,8 @@ class BigDay extends Component {
 
                     <br/><h3>Transportation</h3>
                     Public transportation:
-                    <br/>The hotel can be accessed via NJ Transit trains. The venue is a short distance from the Bernardsville stop on the Morris & Essex line. This provides our guests with direct access to NYC and can be reached via Penn Station.
+                    <br/>The hotel can be accessed via NJ Transit trains. The venue is a short distance from the Bernardsville stop on the Morris & Essex line.
+                    This provides our guests with direct access to NYC and can be reached via Penn Station and/or Newark Airport.
 
 
                     <br/><br/>Nearest Airport:

@@ -11,10 +11,10 @@ class NavigationWrapper extends Component {
         this.state = {
             navigationButtons: [
                 ["Overview", "Overview"]
-                , ["Our Story", "OurStory"]
+                , ["Story", "OurStory"]
                 , ["Details", "BigDay"]
-                , ["Bridal Party", "BridalParty"]
-                , ["Registries", "Registries"]
+                , ["Party", "BridalParty"]
+                , ["Registry", "Registries"]
                 , ["Pictures", "PhotoGallery"]
             ]
             , linkbarOffset: 0
@@ -34,8 +34,8 @@ class NavigationWrapper extends Component {
 
     // handleScroll, getOffset, componentDidMount, componentWillUnmount based on: https://gist.github.com/Tybi/0c8ffb3d54df8a1c8966
     handleScroll() {
-        const navigationLinkBarFrozen = "navigation-linkbar-frozen";
-        const navigationWrapperPadded = "navigation-wrapper-padded";
+        const NAVIGATION_LINK_BAR_FROZEN = "navigation-linkbar-frozen";
+        const NAVIGATION_WRAPPER_PADDED = "navigation-wrapper-padded";
 
         let linkbar = ReactDOM.findDOMNode(this.refs.linkbar);
         let navigationWrapper = ReactDOM.findDOMNode(this.refs.navigationWrapper);
@@ -43,11 +43,11 @@ class NavigationWrapper extends Component {
 
         let windowsScrollTop = window.pageYOffset;
         if (windowsScrollTop >= linkbarOffset.top) {
-            linkbar.classList.add(navigationLinkBarFrozen);
-            navigationWrapper.classList.add(navigationWrapperPadded);
+            linkbar.classList.add(NAVIGATION_LINK_BAR_FROZEN);
+            navigationWrapper.classList.add(NAVIGATION_WRAPPER_PADDED);
         } else {
-            linkbar.classList.remove(navigationLinkBarFrozen);
-            navigationWrapper.classList.remove(navigationWrapperPadded);
+            linkbar.classList.remove(NAVIGATION_LINK_BAR_FROZEN);
+            navigationWrapper.classList.remove(NAVIGATION_WRAPPER_PADDED);
         }
 
     }

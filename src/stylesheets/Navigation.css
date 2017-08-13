@@ -51,7 +51,6 @@ a {
     opacity: .90;
 }
 
-
 .navigation-button-text:hover {
     color: cadetblue;
 }
@@ -98,7 +97,8 @@ a {
 
     .navigation-button-text {
         color: black;
-        font-size: small;
+        font-size: 11px;
+        text-align: center;
     }
 
     .navigation-linkbar-frozen {
@@ -108,7 +108,7 @@ a {
         font-size: small;
     }
     .navigation-button {
-        width: 100px;
+        width: 46px;
         min-height: inherit;
         margin: auto;
         padding-top: 10px;
@@ -117,7 +117,7 @@ a {
         padding-right: 3px;
     }
     .navigation-linkbar-container {
-        width: 400px;
+        width: 320px;
         min-height: inherit;
         display: inline-flex;
         padding: auto;

@@ -13,7 +13,7 @@ class NavigationFooter extends Component {
                 <br/>
                 <a href="http://jakubredziniak.com/"
                    className="navigation-hashtag-text" target="_blank" rel="noopener noreferrer">
-                    Professional Photographs by Jakuk Redziniak </a>
+                    Professional Photographs by Jakub Redziniak </a>
             </div>
         );
     }

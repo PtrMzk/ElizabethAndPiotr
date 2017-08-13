@@ -19,8 +19,14 @@ class Registries extends Component {
                     <div className="content-block-title">
                         Registries
                     </div>
-                    <h1>Bed Bath and Beyond</h1>
-                    <h1>Amazon</h1>
+                    <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=544902931&eventType=Wedding&pwsurl="
+                       target="_blank" rel="noopener noreferrer">
+                        <div className="content-block-text-registry-link">Bed Bath and Beyond</div>
+                    </a>
+                    <a href="https://www.amazon.com/wedding/elizabeth-lipman-piotr-mikolajczyk-basking-ridge-november-2018/registry/LX18QW7DHF1M"
+                       target="_blank" rel="noopener noreferrer">
+                        <div className="content-block-text-registry-link">Amazon</div>
+                    </a>
 
                 </div>
             </div>
