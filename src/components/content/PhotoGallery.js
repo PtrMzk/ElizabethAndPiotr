@@ -81,7 +81,6 @@ class PhotoGallery extends Component {
         let images = this.state.images;
         let newIndex = 0;
 
-        console.log(event.target.value);
         let input = event.target.value;
 
 
