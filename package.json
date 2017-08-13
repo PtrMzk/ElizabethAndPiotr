@@ -15,11 +15,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
-  },
-  "engines": {
-    "node": "7.7.3",
-    "npm": "4.1.2"
+    "eject": "react-scripts eject"
   }
 }
