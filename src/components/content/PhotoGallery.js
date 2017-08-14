@@ -14,8 +14,18 @@ import Beanpot2013 from '../../img/photo-gallery/2013, February, Beanpot Alumni.
 import Graduation2014 from '../../img/photo-gallery/2014, May, Graduation.jpg'
 import Brooklyner2015 from '../../img/photo-gallery/2015, July, Brooklyner.JPG'
 import PopPop90th2016 from '../../img/photo-gallery/2016, July, Poppops 90.jpg'
+import Romantic from '../../img/photo-gallery/2016, February, Valentines Day.jpg'
 import ApplePicking2016 from '../../img/photo-gallery/2016, October, Apple Picking.JPG'
-import FranklinWedding2017 from '../../img/photo-gallery/2017, August, Franklin Wedding.JPG'
+import NEUGraduation2012 from '../../img/photo-gallery/2012, May, Graduation.jpg'
+import Eze2014 from '../../img/photo-gallery/2014, November, Holiday Party.JPG'
+import BK2015 from '../../img/photo-gallery/2015, June, Move to BK.JPG'
+import Vegas2016 from '../../img/photo-gallery/2016, June, Vegas.JPG'
+import Hershey2016 from '../../img/photo-gallery/2016, December, Hershey.JPG'
+import NYE2017 from '../../img/photo-gallery/2017, January, New Years.JPG'
+import Engagment from '../../img/photo-gallery/2017, February, Engaged 1.JPG'
+import Engaged2017 from '../../img/photo-gallery/2017, February, Engaged.jpg'
+import Planning2017 from '../../img/photo-gallery/2017, June, Wedding Planning.JPG'
+import Romantic2 from '../../img/photo-gallery/2016, November, NYC.JPG'
 
 class PhotoGallery extends Component {
     constructor(props) {
@@ -27,18 +37,28 @@ class PhotoGallery extends Component {
                 , new this.ImageWrapper(NJBoardwalk2008, "Piotr loves Elizabeth's smile and is continually thinking of new ways to see it.", 2008)
                 , new this.ImageWrapper(ApplePicking2008, "Elizabeth loves Piotr's quick wit and endless affection.", 2008)
                 , new this.ImageWrapper(Snowball2010, "After meeting, the two remained close friends throughout college.", 2009)
-                , new this.ImageWrapper(Bruins2011, "Piotr brought Elizabeth to the Bruins! " +
-                    "They celebrated the team's Stanley Cup win with a dip in the Reflection Pool.", 2011)
+                , new this.ImageWrapper(Bruins2011, "In college, Piotr introduced Elizabeth to hockey! " +
+                    "They celebrated the Bruin's Stanley Cup win with a dip in the Reflection Pool.", 2011)
                 , new this.ImageWrapper(Anniversary2011, "The couple began officially dating on March 22, 2011", 2011)
+                , new this.ImageWrapper(NEUGraduation2012, "The couple graduated from Northeastern together in May 2012!", 2012)
                 , new this.ImageWrapper(EzeParty2012, "From kegs to cocktails, the couple quickly learned to adjust to life outside of college.", 2012)
                 , new this.ImageWrapper(March2012, "To celebrate their first anniversary, Elizabeth surprised Piotr with front row tickets to see their favorite team.", 2012)
                 , new this.ImageWrapper(Vegas2013, "Their first vacation together as a couple was to Las Vegas!", 2013)
                 , new this.ImageWrapper(Beanpot2013, "Always happy to return to campus, the couple frequently attend Northeastern Alumni events.", 2013)
-                , new this.ImageWrapper(Graduation2014, "Piotr was Elizabeth's biggest supporter throughout graduate school.", 2014)
-                , new this.ImageWrapper(Brooklyner2015, "The couple move to Brooklyn! One of their favorite things to do is enjoy the view from their roof deck.", 2015)
-                , new this.ImageWrapper(PopPop90th2016, "Celebrating Liz's grandfather's 90th birthday party!", 2016)
-                , new this.ImageWrapper(ApplePicking2016, "Liz and Piotr look forward to going apple picking every fall!", 2016)
-                , new this.ImageWrapper(FranklinWedding2017, "Celebrating their friend's wedding! ", 2017)
+                , new this.ImageWrapper(Eze2014, "Elizabeth enjoy accompanying Piotr to work events and learning more about what he does.", 2013)
+                , new this.ImageWrapper(Graduation2014, "Piotr was Elizabeth's biggest supporter throughout graduate school and visits her classroom as often as he can.", 2014)
+                , new this.ImageWrapper(BK2015, "The couple announced their plans to say goodbye to their Boston family and move down to Brooklyn.", 2015)
+                , new this.ImageWrapper(Brooklyner2015, "They moved into their new apartment in June and quickly discovered the joys of a roof deck.", 2015)
+                , new this.ImageWrapper(Vegas2016, "The couple love to travel - whether it be exploring new cities, new states or new countries.", 2016)
+                , new this.ImageWrapper(PopPop90th2016, "Piotr's favorite destination thus far has been Canada and Elizabeth's was The Grand Canyon!", 2016)
+                , new this.ImageWrapper(ApplePicking2016, "The two enjoy family traditions as well - like apple picking every fall!", 2016)
+                , new this.ImageWrapper(Hershey2016, "Another tradition they celebrate is going to Hershey, PA every Christmas!", 2016)
+                , new this.ImageWrapper(NYE2017, "Elizabeth & Piotr rang in 2017 with family and friends. Piotr told her it would be their best year yet!", 2017)
+                , new this.ImageWrapper(Engagment, "On February 18th Piotr proposed to Elizabeth while watching the sunset from their roof deck!", 2017)
+                , new this.ImageWrapper(Engaged2017, "Elizabeth joyfully accepted! They spent the weekend celebrating and telling their friends & family the big news!", 2017)
+                , new this.ImageWrapper(Planning2017, "Elizabeth was delighted to spend the Summer of 2017 planning their wedding!", 2017)
+                , new this.ImageWrapper(Romantic, "Elizabeth cant wait to marry the love of her life in November 2018!", 2017)
+                , new this.ImageWrapper(Romantic, "Piotr is most looking forward celebrating with all of their family and friends in one room!", 2017)
             ]
             , currentImageIndex: 0
         };
