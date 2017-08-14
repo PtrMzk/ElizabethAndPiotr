@@ -25,7 +25,7 @@ import NYE2017 from '../../img/photo-gallery/2017, January, New Years.JPG'
 import Engagment from '../../img/photo-gallery/2017, February, Engaged 1.JPG'
 import Engaged2017 from '../../img/photo-gallery/2017, February, Engaged.jpg'
 import Planning2017 from '../../img/photo-gallery/2017, June, Wedding Planning.JPG'
-import Romantic2 from '../../img/photo-gallery/2016, November, NYC.JPG'
+import DC from '../../img/photo-gallery/2017, April, DC.JPG'
 
 class PhotoGallery extends Component {
     constructor(props) {
@@ -58,7 +58,7 @@ class PhotoGallery extends Component {
                 , new this.ImageWrapper(Engaged2017, "Elizabeth joyfully accepted! They spent the weekend celebrating and sharing their big news!", 2017)
                 , new this.ImageWrapper(Planning2017, "Elizabeth was delighted to spend the Summer of 2017 planning their wedding!", 2017)
                 , new this.ImageWrapper(Romantic, "She cant wait to marry the love of her life in November 2018!", 2017)
-                , new this.ImageWrapper(Romantic2, "Piotr is most looking forward celebrating with all of their family and friends in one room!", 2017)
+                , new this.ImageWrapper(DC, "Piotr is most looking forward celebrating with all of their family and friends in one room!", 2017)
             ]
             , currentImageIndex: 0
         };
@@ -126,14 +126,13 @@ class PhotoGallery extends Component {
                     <div className="content-block-text-photo-gallery-caption">
                         {this.getCaption()}
                     </div>
+                    <div className="content-block-text-photo-gallery-year">
+                        {this.getYear()}
+                    </div>
                     <br/>
                     <input type="range" min="0" max={this.state.images.length - 1} step="1"
                            value={this.state.currentImageIndex} onChange={event => this.setImage(event)}/>
                     <br/>
-
-                    <div className="content-block-text-photo-gallery-year">
-                        {this.getYear()}
-                    </div>
                 </div>
             </div>
         );

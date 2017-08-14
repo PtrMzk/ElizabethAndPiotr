@@ -12,7 +12,7 @@ class WeddingOverview extends Component {
         let days = 0;
         let difference = 0;
 
-        let weddingDay = new Date(2018, 11, 3, 0, 0, 0, 0);
+        let weddingDay = new Date("11/03/2018");
 
         let today = new Date();
 

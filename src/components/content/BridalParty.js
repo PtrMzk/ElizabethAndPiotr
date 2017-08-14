@@ -15,14 +15,14 @@ class BridalParty extends Component {
         const KATIE_LIPMAN = "Katie Lipman";
         const MAID_OF_HONOR = "Maid of Honor";
         const KATIE_DESCRIPTION = "Elizabeth is so excited that her younger sister and best friend will stand beside \n" +
-            "her at the alter as Maid of Honor. \n" +
+            "her at the altar as Maid of Honor. \n" +
             "<br/><br/> The pair have spent endless hours together laughing and playing - \n" +
             "as children building sand castles on the beach, \n" +
             "as teenagers going on driving adventures in high school, \n" +
             "as college students staying in touch via hour-long phone calls \n" +
             "and currently as neighbors in Brooklyn. \n" +
-            "<br/><br/>Elizabeth loves how Katie always knows exactly what to say!Katie is her best friend, truest adviser, biggest cheerleader, and oldest secret \n" +
-            "keeper! Elizabeth \n" +
+            "Elizabeth loves how Katie always knows exactly what to say! Katie is her best friend, truest adviser, biggest cheerleader, and oldest secret \n" +
+            "keeper! <br/><br/>Elizabeth \n" +
             "couldn't imagine spending her last day as a 'Lipman Sister' without her closest pal \n" +
             "& confidant beside her!";
 
