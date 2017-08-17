@@ -3,7 +3,6 @@ import '../stylesheets/Content.css';
 import OurStory from "./content/OurStory";
 import BigDay from "./content/BigDay";
 import WeddingOverview from "./content/WeddingOverview";
-import {Route} from "react-router-dom";
 import * as ReactDOM from "react-dom";
 import BridalParty from "./content/BridalParty";
 import Registries from "./content/Registries";
@@ -51,7 +50,7 @@ class ContentWrapper extends Component {
             let scrollTargetOffset = this.getOffset(scrollTargetNode);
             let scrollTargetY = scrollTargetOffset.top > scrollOffset ? scrollTargetOffset.top - scrollOffset : scrollOffset;
 
-            scrollTargetY += window.screen.width < 800 ? 450 : 0; //fix for iphone
+            scrollTargetY += window.screen.width < 800 ? 300 : 0; //fix for iphone
 
             window.scrollTo(0, scrollTargetY);
         }

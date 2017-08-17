@@ -106,7 +106,6 @@ class PhotoGallery extends Component {
 
         if (input !== this.state.currentImageIndex && input < images.length) {
             newIndex = input;
-            console.log("New Index: " + newIndex);
             this.setState((prevState, props) => ({
                 currentImageIndex: newIndex
             }));
@@ -115,10 +114,10 @@ class PhotoGallery extends Component {
 
     //https://www.reddit.com/r/reactjs/comments/4o6hev/how_does_image_preloading_in_react_work/
     // Preload images at the earliest possible lifecycle event
-    componentWillMount() {
+    componentDidMount() {
         this.state.images.forEach((src) => {
             const img = document.createElement('img');
-            img.src = src; // Assigning the img src immediately requests the image
+            img.src = src.image; // Assigning the img src immediately requests the image
         });
     }
 
