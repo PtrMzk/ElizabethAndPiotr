@@ -113,6 +113,16 @@ class PhotoGallery extends Component {
         }
     }
 
+    //https://www.reddit.com/r/reactjs/comments/4o6hev/how_does_image_preloading_in_react_work/
+    // Preload images at the earliest possible lifecycle event
+    componentWillMount() {
+        this.state.images.forEach((src) => {
+            const img = document.createElement('img');
+            img.src = src; // Assigning the img src immediately requests the image
+        });
+    }
+
+
     render() {
         return (
             <div className="content-block-wrapper">

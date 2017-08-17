@@ -1,0 +1,1 @@
+magick mogrify -resize 600x600 -quality 85 -strip *.jpg
