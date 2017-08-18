@@ -8,7 +8,6 @@ import NavigationFooter from "./NavigationFooter";
 
 class App extends Component {
     render() {
-        //<Route path="/BigDay" component={() => (<ContentWrapper scrollTarget="BigDay" />)}/>
         return (
             <Router>
                 <div className="app">

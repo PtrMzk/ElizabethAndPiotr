@@ -7,12 +7,12 @@ import * as ReactDOM from "react-dom";
 import BridalParty from "./content/BridalParty";
 import Registries from "./content/Registries";
 import PhotoGallery from "./content/PhotoGallery";
+import {getOffset} from '../helpers';
 
 class ContentWrapper extends Component {
     constructor(props) {
         super(props);
         this.componentDidMount = this.componentDidMount.bind(this);
-        this.getOffset = this.getOffset.bind(this);
         this.scrollToTargetSection = this.scrollToTargetSection.bind(this);
     }
 
@@ -24,45 +24,19 @@ class ContentWrapper extends Component {
         if (this.props.match.params && this.props.match.params.scrollTarget && this.props.match.params.scrollTarget.length > 1) {
 
             let scrollTarget = this.props.match.params.scrollTarget;
+            //https://stackoverflow.com/questions/9038625/detect-if-device-is-ios
+            let isAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
             const scrollOffset = 60;
 
-            let scrollTargetNode = ReactDOM.findDOMNode(this);
-            //todo: can we do this dynamically
-            if (scrollTarget === "BigDay") {
-                scrollTargetNode = ReactDOM.findDOMNode(this.refs.BigDay);
-            }
-            else if (scrollTarget === "OurStory") {
-                scrollTargetNode = ReactDOM.findDOMNode(this.refs.OurStory);
-            }
-            else if (scrollTarget === "BridalParty") {
-                scrollTargetNode = ReactDOM.findDOMNode(this.refs.BridalParty);
-            }
-            else if (scrollTarget === "Overview") {
-                scrollTargetNode = ReactDOM.findDOMNode(this.refs.Overview);
-            }
-            else if (scrollTarget === "Registries") {
-                scrollTargetNode = ReactDOM.findDOMNode(this.refs.Registries);
-            }
-            else if (scrollTarget === "PhotoGallery") {
-                scrollTargetNode = ReactDOM.findDOMNode(this.refs.PhotoGallery);
-            }
+            let scrollTargetNode = ReactDOM.findDOMNode(this.refs[scrollTarget]);
 
-            let scrollTargetOffset = this.getOffset(scrollTargetNode);
+            let scrollTargetOffset = getOffset(scrollTargetNode);
             let scrollTargetY = scrollTargetOffset.top > scrollOffset ? scrollTargetOffset.top - scrollOffset : scrollOffset;
 
-            scrollTargetY += window.screen.width < 800 ? 350 : 0; //fix for iphone
+            scrollTargetY *= isAppleDevice ? 1.068 : 1; //fix for iphone - seems to get more out of line the further down the page you go
 
             window.scrollTo(0, scrollTargetY);
         }
-    }
-
-    //todo: move this to a property so it isnt in two places
-    getOffset(element) {
-        let bounding = element.getBoundingClientRect();
-        return {
-            top: bounding.top + document.body.scrollTop,
-            left: bounding.left + document.body.scrollLeft
-        };
     }
 
     render() {

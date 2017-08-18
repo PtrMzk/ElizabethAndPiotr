@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../stylesheets/Navigation.css';
 import NavigationButton from "./NavigationButton";
 import ReactDOM from 'react-dom';
+import {getOffset} from "../helpers"
 
 
 class NavigationWrapper extends Component {
@@ -10,18 +11,17 @@ class NavigationWrapper extends Component {
 
         this.state = {
             navigationButtons: [
-                ["Overview", "Overview"]
+                ["Event", "Overview"]
                 , ["Story", "OurStory"]
                 , ["Details", "BigDay"]
                 , ["Party", "BridalParty"]
                 , ["Registry", "Registries"]
-                , ["Pictures", "PhotoGallery"]
+                , ["Gallery", "PhotoGallery"]
             ]
             , linkbarOffset: 0
         };
 
         this.handleScroll = this.handleScroll.bind(this);
-        this.getOffset = this.getOffset.bind(this);
         this.componentDidMount = this.componentDidMount.bind(this);
         this.componentWillUnmount = this.componentWillUnmount.bind(this);
     }
@@ -52,16 +52,9 @@ class NavigationWrapper extends Component {
 
     }
 
-    getOffset(element) {
-        let bounding = element.getBoundingClientRect();
-        return {
-            top: bounding.top + document.body.scrollTop,
-            left: bounding.left + document.body.scrollLeft
-        };
-    }
 
     componentDidMount() {
-        let linkbarOffset = this.getOffset(this.refs.linkbar);
+        let linkbarOffset = getOffset(this.refs.linkbar);
         window.addEventListener('scroll', this.handleScroll);
 
         this.setState((prevState, props) => ({
