@@ -65,6 +65,12 @@ a {
         font-size: medium;
     }
 
+    .navigation-button-text-active {
+        font-weight:bolder;
+        font-size: large;
+        color: #6BABBA;
+    }
+
     .navigation-linkbar-frozen {
         position: fixed;
         top: 0px;
@@ -98,6 +104,12 @@ a {
         color: black;
         font-size: 13px;
         text-align: center;
+    }
+
+    .navigation-button-text-active {
+        font-weight:bolder;
+        font-size: medium;
+        color: #6BABBA;
     }
 
     .navigation-linkbar-frozen {

@@ -57,16 +57,16 @@ class WeddingOverview extends Component {
 
                     <h3>Date</h3>
                     Saturday, November 3, 2018
-                    <br/>
+                    <br/><br/>
 
-                    <h3>Ceremony, Reception & After-Party</h3>
+                    <h3>Ceremony and Reception</h3>
                     The Olde Mill Inn
                     <br/>225 Route 202 Basking Ridge, NJ 07920
                     <br/>800-585-4461 | 908-221-1100
 
-                    <br/> <h1>
+                    <br/><br/> <h2>
                     {countdownMessage}
-                </h1>
+                </h2>
                 </div>
             </div>
         );

@@ -10,16 +10,11 @@ h3 {
     background: #fbfbfb;
 }
 
-.content-block-padded-cell{
+.content-block-padded-cell {
     padding-top: 50px;
 }
 
-td{
-    width:50%;
-    vertical-align: top;
-}
-
-a:hover{
+a:hover {
     color: cadetblue;
 }
 
@@ -29,17 +24,23 @@ a:hover{
     width: 700px;
 }
 
+.content-block-bridal-party-animals-note {
+    font-style: italic;
+}
 
+.content-block-bridal-party-mspca-link {
+    font-weight: bold;
+}
 
 .content-block-registries-table {
     min-width: 100%;
-    text-align:center;
+    text-align: center;
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
 }
 
-.content-block-image-rounded{
+.content-block-image-rounded {
     border-radius: 5%;
     overflow: hidden;
 }
@@ -48,7 +49,7 @@ a:hover{
     text-align: center;
 }
 
-.content-block-title-cats-of-honor{
+.content-block-title-cats-of-honor {
     padding-top: 120px;
 }
 
@@ -56,31 +57,38 @@ div[class*='content-block-image'] {
     padding-top: 67px;
 }
 
-.content-block-bridal-party-table-text{
+.content-block-bridal-party-table-text {
     text-align: left;
     vertical-align: top;
     display: inline-block;
 }
 
-.content-block-registries-amazon{
-    display:table-cell;
-    vertical-align:middle;
-    text-align:center
+.content-block-registries-amazon {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
 }
 
+@media (min-width: 950px) {
+    td {
+        width: 50%;
+        vertical-align: top;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
-
-@media (min-width: 800px){
     .content-block-title {
         font-family: 'Great Vibes', cursive;
-        font-size: 70px;
+        font-size: 60px;
         text-align: center;
     }
 
     .content-box {
         min-height: 350px;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        font-size:18px;
+        line-height: 1.6;
     }
 
     .content-block-image-right {
@@ -92,6 +100,7 @@ div[class*='content-block-image'] {
         float: left;
         padding-right: 20px;
     }
+
     .content-block-text-left {
         text-align: left;
     }
@@ -99,22 +108,25 @@ div[class*='content-block-image'] {
     .content-block-text-right {
         text-align: right;
     }
+
     .content-block-image-big-day {
         width: 420px;
         height: auto;
     }
 
     .content-block-image-our-story {
-        width: 570px;
+        width: 530px;
         height: auto;
 
     }
+
     .content-block-image-bridal-party {
         width: auto;
         height: 300px;
         border-radius: 50%;
         overflow: hidden;
     }
+
     .content-block-image-registries {
         width: 500px;
         height: auto;
@@ -123,47 +135,63 @@ div[class*='content-block-image'] {
     .content-block-wrapper {
         min-height: 100px;
         padding: 20px;
-        max-width: 1200px;
+        max-width: 1000px;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
         overflow: auto;
         -webkit-text-size-adjust: auto;
     }
-    .content-block-image-photo-gallery{
+
+    .content-block-image-photo-gallery {
         height: 500px;
     }
-    .content-block-bridal-party-mobile-tables{
+
+    .content-block-bridal-party-mobile-tables {
         display: none;
     }
-    .content-block-text-photo-gallery-caption{
-        min-height: 70px;
+
+    .content-block-text-photo-gallery-caption {
+        min-height: 80px;
         font-size: x-large;
     }
-    .content-block-text-photo-gallery-year{
-        padding-top: 30px;
+
+    .content-block-text-photo-gallery-year {
+        padding-top: 10px;
         min-height: 70px;
         font-size: 70px;
         font-weight: bold;
     }
-    .content-block-text-registry-link{
+
+    .content-block-text-registry-link {
         padding-top: 10px;
-        padding-bottom:10px;
-        font-size: xx-large;
+        padding-bottom: 10px;
+        font-size: x-large;
         font-weight: bold;
     }
 }
 
+@media (max-width: 949px) {
+    td {
+        width: 50%;
+        vertical-align: top;
+    }
 
-@media (max-width: 799px) {
+    h3{
+        font-size:large;
+    }
+
     .content-box {
         min-height: 350px;
         padding-top: 20px;
         padding-bottom: 20px;
+        font-size:17px;
+        line-height: 1.8;
     }
 
     .content-block-title {
         font-family: 'Great Vibes', cursive;
-        font-size: 55px;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -176,6 +204,7 @@ div[class*='content-block-image'] {
         float: top;
         text-align: center;
     }
+
     .content-block-text-left {
         text-align: left;
     }
@@ -183,6 +212,7 @@ div[class*='content-block-image'] {
     .content-block-text-right {
         text-align: left;
     }
+
     .content-block-image-big-day {
         width: 200px;
         height: auto;
@@ -195,12 +225,14 @@ div[class*='content-block-image'] {
         width: 200px;
         height: auto;
     }
+
     .content-block-image-bridal-party {
         width: auto;
         height: 200px;
         border-radius: 50%;
         overflow: hidden;
     }
+
     .content-block-image-registries {
         width: 200px;
         height: auto;
@@ -209,31 +241,35 @@ div[class*='content-block-image'] {
     .content-block-wrapper {
         min-height: 100px;
         padding: 20px;
-        max-width: 1200px;
+        max-width: 800px;
         margin-left: auto;
         margin-right: auto;
         overflow: auto;
     }
-    .content-block-image-photo-gallery{
+
+    .content-block-image-photo-gallery {
         height: 200px;
     }
 
-    .content-block-bridal-party-desktop-tables{
+    .content-block-bridal-party-desktop-tables {
         display: none;
     }
-    .content-block-text-photo-gallery-caption{
+
+    .content-block-text-photo-gallery-caption {
         min-height: 75px;
         font-size: medium;
     }
-    .content-block-text-photo-gallery-year{
+
+    .content-block-text-photo-gallery-year {
         padding-top: 10px;
         min-height: 40px;
         font-size: 40px;
         font-weight: bold;
     }
-    .content-block-text-registry-link{
+
+    .content-block-text-registry-link {
         padding-top: 10px;
-        padding-bottom:10px;
+        padding-bottom: 10px;
         font-size: large;
         font-weight: bold;
     }

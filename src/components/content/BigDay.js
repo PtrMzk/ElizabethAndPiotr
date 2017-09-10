@@ -27,15 +27,17 @@ class BigDay extends Component {
                     We have reserved a block of rooms at The Olde Mill Inn! You can reserve a room by calling the hotel and asking for the Lipman-Mikolajczyk Wedding! Please be advised that we have a limited number of rooms and strongly encourage you to book early in order to guarantee a spot in this hotel!
 
                     <br/><h3>Transportation</h3>
-                    Public transportation:
+                    <b>Public transportation:</b>
                     <br/>The hotel can be accessed via NJ Transit trains. The venue is a short distance from the Bernardsville stop on the Morris & Essex line.
                     This provides our guests with direct access to NYC and can be reached via Penn Station and/or Newark Airport.
 
 
-                    <br/><br/>Nearest Airport:
+                    <br/><br/>
+                    <b>Nearest Airport:</b>
                     <br/>Newark Liberty International Airport (EWR) <br/>3 Brewster Rd, Newark, NJ 07114
 
-                    <br/><br/>Driving Directions:
+                    <br/><br/>
+                    <b>Driving Directions:</b>
                     <br/> The Olde Mill Inn is located off of Route 287, Exit 30B. Bear right off the exit and you will find the property immeadiately following on the right hand side prior to the intersection.
 
                 </div>

@@ -21,7 +21,7 @@ class BridalParty extends Component {
             "as teenagers going on driving adventures in high school, \n" +
             "as college students staying in touch via hour-long phone calls \n" +
             "and currently as neighbors in Brooklyn. \n" +
-            "Elizabeth loves how Katie always knows exactly what to say! Katie is her best friend, truest adviser, biggest cheerleader, and oldest secret \n" +
+            "<br/><br/>Elizabeth loves how Katie always knows exactly what to say! Katie is her best friend, truest adviser, biggest cheerleader, and oldest secret \n" +
             "keeper! <br/><br/>Elizabeth \n" +
             "couldn't imagine spending her last day as a 'Lipman Sister' without her closest pal \n" +
             "& confidant beside her!";
@@ -36,7 +36,7 @@ class BridalParty extends Component {
             "bedrooms with Legos and action figures. As they matured, so did their goals, and the\n" +
             "two spent endless hours together\n" +
             "saving the solar system in the computer game Descent.\n" +
-            "Currently, both brothers have plans to take over the internet with their unique (and\n" +
+            "<br/><br/>Currently, both brothers have plans to take over the internet with their unique (and\n" +
             "super cool)\n" +
             "software creations. <br/><br/>For Piotr, there has only ever been one \"Best Man\" in\n" +
             "his life and he is so happy\n" +
@@ -65,6 +65,8 @@ class BridalParty extends Component {
             "brought him home the same day!\n" +
             "He continues to play the role of \"snuggler\" to this day and has spent the last three\n" +
             "years happily living with the couple!";
+
+        const MSPCA = " MSPCA";
 
         return (
             <div className="content-block-wrapper">
@@ -165,7 +167,7 @@ class BridalParty extends Component {
                                     </div>
                                 </td>
                             </tr>
-                            <tr >
+                            <tr>
                                 <td className="content-block-padded-cell">
                                     <img src={Pawel}
                                          className="content-block-image-bridal-party" alt="Pawel"/>
@@ -183,7 +185,7 @@ class BridalParty extends Component {
                                 </td>
                             </tr>
                         </table>
-                        <br/>
+
                         <div className="content-block-title content-block-title-cats-of-honor">
                             Cats of Honor
                         </div>
@@ -197,22 +199,22 @@ class BridalParty extends Component {
                                     </div>
                                 </td>
                             </tr>
-                                <tr>
-                                    <td>
-                                        <div className="content-block-bridal-party-table-text">
-                                            <div dangerouslySetInnerHTML={{__html: CLAIRE_DESCRIPTION}}/>
+                            <tr>
+                                <td>
+                                    <div className="content-block-bridal-party-table-text">
+                                        <div dangerouslySetInnerHTML={{__html: CLAIRE_DESCRIPTION}}/>
 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <td className="content-block-padded-cell">
-                                    <img src={Henry}
-                                         className="content-block-image-bridal-party" alt="Henry"/>
-                                    <div className="content-block-bridal-party-table-title">
-                                        <h2>{HENRY}</h2>
                                     </div>
-
                                 </td>
+                            </tr>
+                            <td className="content-block-padded-cell">
+                                <img src={Henry}
+                                     className="content-block-image-bridal-party" alt="Henry"/>
+                                <div className="content-block-bridal-party-table-title">
+                                    <h2>{HENRY}</h2>
+                                </div>
+
+                            </td>
                             <tr>
                                 <td>
                                     <div className="content-block-bridal-party-table-text">
@@ -222,6 +224,16 @@ class BridalParty extends Component {
                             </tr>
                         </table>
                     </div>
+                    <br/>
+                    <div className="content-block-bridal-party-animals-note">
+                        Elizabeth and Piotr feel very passionately about rescuing animals.
+                        <br/>As part of the wedding, we will make donation to the
+                        <a href="https://www.amazon.com/gp/registry/wishlist/21TGH98XRJHJC"
+                           className="content-block-bridal-party-mspca-link" target="_blank" rel="noopener noreferrer">
+                            {MSPCA}.
+                        </a>
+                    </div>
+
 
                 </div>
             </div>

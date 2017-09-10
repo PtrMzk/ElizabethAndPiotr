@@ -15,8 +15,8 @@ class App extends Component {
                         <NavigationWrapper/>
                     </div>
                     <div className="content">
-                        <Route exact= {true} path="/" component={ContentWrapper}/>
-                        <Route path="/:scrollTarget" component={ContentWrapper}/>
+                        <Route exact= {true} path="/" component={ContentWrapper} store={this.props.store}/>
+                        <Route path="/:scrollTarget" component={ContentWrapper} store={this.props.store}/>
                     </div>
                     <div className="footer">
                         <NavigationFooter/>
