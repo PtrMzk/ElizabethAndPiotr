@@ -37,7 +37,7 @@ class NavigationButton extends Component {
 
 //todo: add propType checks to objects
 NavigationButton.propTypes = {
-    activeButton: PropTypes.string.isRequired,
+    activeNavigationButton: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
 };
 

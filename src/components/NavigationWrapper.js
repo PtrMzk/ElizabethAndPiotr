@@ -105,13 +105,11 @@ class NavigationWrapper extends Component {
 
 //todo: add propType checks to objects
 NavigationWrapper.propTypes = {
-    activeComponentBox: PropTypes.string.isRequired,
     navigationButtons: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-        activeComponentBox: state.componentBoxReducer.activeComponentBox,
         navigationButtons: state.navigationButtonReducer.navigationButtons
     };
 }

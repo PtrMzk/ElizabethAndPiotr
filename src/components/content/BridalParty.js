@@ -76,6 +76,7 @@ class BridalParty extends Component {
                     </div>
                     <div className="content-block-bridal-party-desktop-tables">
                         <table className="content-block-bridal-party-table">
+                            <tbody>
                             <tr>
                                 <td>
                                     <img src={Katie}
@@ -107,12 +108,14 @@ class BridalParty extends Component {
                                     </div>
                                 </td>
                             </tr>
+                            </tbody>
                         </table>
                         <br/>
                         <div className="content-block-title content-block-title-cats-of-honor">
                             Cats of Honor
                         </div>
                         <table className="content-block-bridal-party-cats-of-honor-table">
+                            <tbody>
                             <tr>
                                 <td>
                                     <img src={Claire}
@@ -145,11 +148,13 @@ class BridalParty extends Component {
                                     </div>
                                 </td>
                             </tr>
+                            </tbody>
                         </table>
                     </div>
 
                     <div className="content-block-bridal-party-mobile-tables">
                         <table className="content-block-bridal-party-table">
+                            <tbody>
                             <tr>
                                 <td className="content-block-padded-cell">
                                     <img src={Katie}
@@ -184,12 +189,14 @@ class BridalParty extends Component {
                                     </div>
                                 </td>
                             </tr>
+                            </tbody>
                         </table>
 
                         <div className="content-block-title content-block-title-cats-of-honor">
                             Cats of Honor
                         </div>
                         <table className="content-block-bridal-party-cats-of-honor-table">
+                            <tbody>
                             <tr>
                                 <td className="content-block-padded-cell">
                                     <img src={Claire}
@@ -222,6 +229,7 @@ class BridalParty extends Component {
                                     </div>
                                 </td>
                             </tr>
+                            </tbody>
                         </table>
                     </div>
                     <br/>

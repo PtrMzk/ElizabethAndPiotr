@@ -69,7 +69,6 @@ class ContentWrapper extends Component {
         );
 
         let yOffset = window.pageYOffset + Math.sqrt(window.pageYOffset*8);
-        console.log(yOffset);
 
         for (let i = 0; i < componentBoxes.length; i++) {
             if (componentBoxes[i].top <= yOffset && componentBoxes[i].bottom >= yOffset) {//find first bottom boundary greater than boundary constant. this means that box is inscope

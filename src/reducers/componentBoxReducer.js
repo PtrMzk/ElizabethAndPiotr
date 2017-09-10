@@ -6,7 +6,6 @@ const initialState = {
 };
 
 export default function componentBoxReducer (state = initialState, action){
-    console.log(state);
     switch (action.type) {
         case constants.ADD_COMPONENT_BOX: {
             return {...state, componentBoxes: [...state.componentBoxes, action.payload]}
