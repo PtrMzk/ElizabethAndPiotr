@@ -45,7 +45,6 @@ class ContentWrapper extends Component {
     componentDidMount() {
         this.scrollToTargetSection();
         window.addEventListener('scroll', this.handleScroll);
-        this.populateComponentBoxes();
 
     }
 
