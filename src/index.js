@@ -10,7 +10,6 @@ import {createStore} from "redux";
 
 const store = configureStore();
 console.log("store created");
-//store.dispatch({type: "ADD_COMPONENT_BOX", payload: 5});
 
 ReactDOM.render(
     <Provider store={store}>

@@ -23,8 +23,7 @@ class NavigationWrapper extends Component {
 
     renderNavigationButtons(navigationButton, i) {
         return (
-            <NavigationButton key={i} index={i} name={navigationButton.name} linkUrl={navigationButton.link}
-                              isInScrollScope={navigationButton.isInScrollScope}/>
+            <NavigationButton key={i} index={i} name={navigationButton.name} linkUrl={navigationButton.link}/>
         )
     }
 
