@@ -37,7 +37,7 @@ class OurStory extends Component {
                     After only a few hours, he returned home with a little black box and a big plan.<br/><br/>
                     The couple went upstairs to their roof deck to watch the sunset and share a bottle of wine.
                     Piotr began talking about their love story and all the memories they had shared together as a couple.
-                    Before she understood what was happening, he was down on one knee asking her to spend the rest of their lives together.
+                    Before Elizabeth understood what was happening, he was down on one knee asking her to spend the rest of their lives together.
                     She immediately burst into tears and happily accepted!<br/><br/>
 
                     The couple are looking forward to publicly declaring their love in front of family and friends on November 3, 2018 at The Olde Mill Inn in Basking Ridge, NJ. <br/><br/>

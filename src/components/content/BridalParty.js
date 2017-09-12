@@ -52,7 +52,7 @@ class BridalParty extends Component {
             "more mature to match her sophisticated personality. Affectionately referred to as\n" +
             "the \"adventurer\",\n" +
             "she has spent four happy years living with her parents and can't wait to see them\n" +
-            "\happily married.";
+            "happily married.";
 
         const HENRY = "Henry";
         const HENRY_DESCRIPTION = "Henry had an instant connection with the couple!\n" +
@@ -235,11 +235,12 @@ class BridalParty extends Component {
                     <br/>
                     <div className="content-block-bridal-party-animals-note">
                         Elizabeth and Piotr feel very passionately about rescuing animals.
-                        <br/>As part of the wedding, we will make donation to the
-                        <a href="https://www.amazon.com/gp/registry/wishlist/21TGH98XRJHJC"
+                        <br/>As part of the wedding, we will make a donation to the
+                        <a href="https://www.mspca.org/"
                            className="content-block-bridal-party-mspca-link" target="_blank" rel="noopener noreferrer">
-                            {MSPCA}.
+                            {MSPCA}
                         </a>
+                        !
                     </div>
 
 

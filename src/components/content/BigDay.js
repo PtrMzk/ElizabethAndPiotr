@@ -11,7 +11,7 @@ class BigDay extends Component {
         return (
             <div className="content-block-wrapper">
                 <div className="content-block-text-left">
-                    <div className="content-block-image-left">
+                    <div className="content-block-image-right">
                         <img src={BigDayImage}
                              className="content-block-image-big-day content-block-image-rounded" alt="Liz and Piotr in Black and White"/>
                     </div>

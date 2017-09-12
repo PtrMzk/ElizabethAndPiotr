@@ -10,8 +10,6 @@ import Registries from "./content/Registries";
 import PhotoGallery from "./content/PhotoGallery";
 import {getOffset} from '../helpers';
 import {connect} from 'react-redux'
-import {bindActionCreators} from 'redux';
-import * as componentBoxActions from '../actions/componentBoxActions';
 import {addComponentBox, clearComponentBoxes, updateActiveComponentBox } from "../actions/componentBoxActions";
 import {updateActiveNavigationButton} from "../actions/navigationButtonActions"
 
@@ -27,26 +25,22 @@ class ContentWrapper extends Component {
         this.populateComponentBox = this.populateComponentBox.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
         this.clearComponentBoxes = this.clearComponentBoxes.bind(this);
-
         this.state = {
             components: [
-                <WeddingOverview ref="Overview"/>
-                , <OurStory ref="OurStory"/>
-                , <BigDay ref="BigDay"/>
-                , <BridalParty ref="BridalParty"/>
-                , <Registries ref="Registries"/>
-                , <PhotoGallery ref="PhotoGallery"/>
+                "Overview"
+                , "OurStory"
+                , "BigDay"
+                , "BridalParty"
+                , "Registries"
+                , "PhotoGallery"
             ],
             componentBoxes: []
         };
     }
 
-
     componentDidMount() {
         this.scrollToTargetSection();
         window.addEventListener('scroll', this.handleScroll);
-        this.populateComponentBoxes();
-
     }
 
     componentWillUnmount() {
@@ -84,8 +78,8 @@ class ContentWrapper extends Component {
         this.props.clearComponentBoxes();
     }
 
-    populateComponentBox(component, i) {
-        let ref = component.ref;
+    populateComponentBox(componentRef, i) {
+        let ref = componentRef;
         let node = ReactDOM.findDOMNode(this.refs[ref]);
         let bounding = getOffset(node);
         //this.state.componentBoxes.push([bounding.top, bounding.bottom]);
@@ -116,13 +110,15 @@ class ContentWrapper extends Component {
         }
     }
 
-    renderComponents(component, i) {
+    renderComponents(componentWrapper, i) {
         const BOX_LIGHT = "content-box light";
         const BOX_DARK = "content-box dark";
+        //todo: see if this can be fixed
+        //componentWrapper.component.ref= componentWrapper.reference;
 
         return (
             <div className={i % 2 === 0 ? BOX_LIGHT : BOX_DARK} key={i}>
-                {component}
+                {componentWrapper.component}
             </div>
         )
     }
@@ -130,8 +126,28 @@ class ContentWrapper extends Component {
 
     render() {
         return (
+            //<div className="content-wrapper">
+             //   {this.state.components.map(this.renderComponents)}
+            //</div>
             <div className="content-wrapper">
-                {this.state.components.map(this.renderComponents)}
+                <div className="content-box light">
+                    <WeddingOverview ref="Overview"/>
+                </div>
+                <div className="content-box dark">
+                    <OurStory ref="OurStory"/>
+                </div>
+                <div className="content-box light">
+                    <PhotoGallery ref="PhotoGallery"/>
+                </div>
+                <div className="content-box dark">
+                    <BigDay ref="BigDay"/>
+                </div>
+                <div className="content-box light">
+                    <BridalParty ref="BridalParty"/>
+                </div>
+                <div className="content-box dark">
+                    <Registries ref="Registries"/>
+                </div>
             </div>
         );
     }

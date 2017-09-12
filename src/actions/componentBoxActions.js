@@ -14,13 +14,6 @@ export function updateActiveComponentBox(componentBoxInScope) {
     }
 }
 
-export function getComponentBoxes() {
-    return {
-        type: constants.GET_COMPONENT_BOXES,
-        payload: null
-    }
-}
-
 export function clearComponentBoxes(){
     return{
         type: constants.CLEAR_COMPONENT_BOXES,
