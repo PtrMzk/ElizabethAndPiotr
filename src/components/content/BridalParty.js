@@ -43,13 +43,12 @@ class BridalParty extends Component {
             "Pawel will be standing next to him on his wedding day.";
 
         const CLAIRE = "Claire";
-        const CLAIRE_DESCRIPTION = "Claire remembers the first day she saw Elizabeth & Piotr and the feeling of sheer\n" +
-            "joy she felt at finally\n" +
-            "being adopted after waiting several months!\n" +
+        const CLAIRE_DESCRIPTION = "Claire vividly remembers the day she first saw Elizabeth & Piotr walk into the MSPCA. After waiting several months, she couldn't" +
+            "believe her luck when they chose her! She was overjoyed to finally be going home!" +
             "<br/><br/>She was equally excited that her new family changed her name from\n" +
             "\"Orangie\" to\n" +
             "something a bit\n" +
-            "more mature to match her sophisticated personality. Affectionately referred to as\n" +
+            "more regal to match her sophisticated personality. Affectionately referred to as\n" +
             "the \"adventurer\",\n" +
             "she has spent four happy years living with her parents and can't wait to see them\n" +
             "happily married.";
