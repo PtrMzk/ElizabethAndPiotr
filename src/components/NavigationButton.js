@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../stylesheets/Navigation.css';
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types';
+import {updateActiveComponentBox} from "../actions/componentBoxActions";
 
 class NavigationButton extends Component {
     constructor(props) {
@@ -46,7 +47,6 @@ function mapStateToProps(state, ownProps) {
         activeNavigationButton: state.navigationButtonReducer.activeButton
     };
 }
-
 
 export default connect(
     mapStateToProps

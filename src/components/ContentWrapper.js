@@ -10,8 +10,9 @@ import Registries from "./content/Registries";
 import PhotoGallery from "./content/PhotoGallery";
 import {getOffset} from '../helpers';
 import {connect} from 'react-redux'
-import {addComponentBox, clearComponentBoxes, updateActiveComponentBox } from "../actions/componentBoxActions";
+import {addComponentBox, clearComponentBoxes, updateActiveComponentBox} from "../actions/componentBoxActions";
 import {updateActiveNavigationButton} from "../actions/navigationButtonActions"
+import Flower from '../img/flower.png';
 
 
 class ContentWrapper extends Component {
@@ -38,9 +39,11 @@ class ContentWrapper extends Component {
         };
     }
 
+
     componentDidMount() {
         this.scrollToTargetSection();
         window.addEventListener('scroll', this.handleScroll);
+        this.props.updateActiveButton(this.props.match.params.scrollTarget);
     }
 
     componentWillUnmount() {
@@ -62,7 +65,7 @@ class ContentWrapper extends Component {
             this.populateComponentBox
         );
 
-        let yOffset = window.pageYOffset + Math.sqrt(window.pageYOffset*8);
+        let yOffset = window.pageYOffset + Math.sqrt(window.pageYOffset * 8);
 
         for (let i = 0; i < componentBoxes.length; i++) {
             if (componentBoxes[i].top <= yOffset && componentBoxes[i].bottom >= yOffset) {//find first bottom boundary greater than boundary constant. this means that box is inscope
@@ -125,25 +128,31 @@ class ContentWrapper extends Component {
 
 
     render() {
+
         return (
-            //<div className="content-wrapper">
-             //   {this.state.components.map(this.renderComponents)}
-            //</div>
             <div className="content-wrapper">
                 <div className="content-box light">
                     <WeddingOverview ref="Overview"/>
+                    <br/><br/>
+                    <img src={Flower} className="content-block-flower-image"/>
                 </div>
                 <div className="content-box dark">
                     <OurStory ref="OurStory"/>
+                    <br/><br/>
+                    <img src={Flower} className="content-block-flower-image"/>
                 </div>
                 <div className="content-box light">
                     <PhotoGallery ref="PhotoGallery"/>
                 </div>
                 <div className="content-box dark">
                     <BigDay ref="BigDay"/>
+                    <br/><br/>
+                    <img src={Flower} className="content-block-flower-image"/>
                 </div>
                 <div className="content-box light">
                     <BridalParty ref="BridalParty"/>
+                    <br/><br/>
+                    <img src={Flower} className="content-block-flower-image"/>
                 </div>
                 <div className="content-box dark">
                     <Registries ref="Registries"/>
