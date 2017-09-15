@@ -20,7 +20,6 @@ class ContentWrapper extends Component {
         super(props);
         this.componentDidMount = this.componentDidMount.bind(this);
         this.scrollToTargetSection = this.scrollToTargetSection.bind(this);
-        this.checkComponentScrolledTo = this.checkComponentScrolledTo.bind(this);
         this.renderComponents = this.renderComponents.bind(this);
         this.populateComponentBoxes = this.populateComponentBoxes.bind(this);
         this.populateComponentBox = this.populateComponentBox.bind(this);
@@ -52,9 +51,7 @@ class ContentWrapper extends Component {
 
     handleScroll() {
         //todo: make sure this doesnt run for every scroll
-        //if (this.state.componentBoxes.length === 0) {
         this.populateComponentBoxes();
-        //}
     }
 
     populateComponentBoxes() {
@@ -91,8 +88,6 @@ class ContentWrapper extends Component {
         this.props.addComponentBox(componentWrapper);
     }
 
-    checkComponentScrolledTo() {
-    }
 
     scrollToTargetSection() {
         if (this.props.match.params && this.props.match.params.scrollTarget && this.props.match.params.scrollTarget.length > 1) {
@@ -107,7 +102,7 @@ class ContentWrapper extends Component {
             let scrollTargetOffset = getOffset(scrollTargetNode);
             let scrollTargetY = scrollTargetOffset.top > scrollOffset ? scrollTargetOffset.top - scrollOffset : scrollOffset;
 
-            scrollTargetY *= isAppleDevice ? 1.068 : 1; //fix for iphone - seems to get more out of line the further down the page you go
+            scrollTargetY *= isAppleDevice ? 1.09 : 1; //fix for iphone - seems to get more out of line the further down the page you go
 
             window.scrollTo(0, scrollTargetY);
         }
