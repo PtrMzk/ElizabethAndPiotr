@@ -36,15 +36,15 @@ class PhotoGallery extends Component {
                 new this.ImageWrapper(WestF2007, "Elizabeth & Piotr first met at a party he threw their Freshmen Year.", 2007)
                 , new this.ImageWrapper(NJBoardwalk2008, "Piotr loves Elizabeth's smile and is continually thinking of new ways to see it.", 2008)
                 , new this.ImageWrapper(ApplePicking2008, "Elizabeth loves Piotr's quick wit and endless affection.", 2008)
-                , new this.ImageWrapper(Snowball2010, "After meeting, the two remained close friends throughout college.", 2009)
+                , new this.ImageWrapper(Snowball2010, "The pair were close friends throughout college.", 2010)
                 , new this.ImageWrapper(Bruins2011, "Piotr introduced Elizabeth to hockey and brought her to her first game!", 2011)
-                , new this.ImageWrapper(Anniversary2011, "The two began officially dating on March 22, 2011!", 2011)
+                , new this.ImageWrapper(Anniversary2011, "They officially became a couple on March 22, 2011!", 2011)
                 , new this.ImageWrapper(NEUGraduation2012, "The couple graduated from Northeastern University in May 2012!", 2012)
-                , new this.ImageWrapper(EzeParty2012, "From kegs to cocktails, the couple quickly learned to adjust to life outside of college.", 2012)
+                , new this.ImageWrapper(EzeParty2012, "The couple quickly learned to adjust to life outside of college.", 2012)
                 , new this.ImageWrapper(March2012, "They celebrated their first anniversary with front row tickets to their favorite team.", 2012)
                 , new this.ImageWrapper(Vegas2013, "Their first vacation together was to Las Vegas, NV!", 2013)
                 , new this.ImageWrapper(Beanpot2013, "They have such fond memories of Northeastern and are always happy to return to campus.", 2013)
-                , new this.ImageWrapper(Eze2014, "Elizabeth enjoys accompanying Piotr to work events and seeing how creative he solves problems!", 2013)
+                , new this.ImageWrapper(Eze2014, "Elizabeth enjoys accompanying Piotr to work events and seeing how creatively he solves problems!", 2013)
                 , new this.ImageWrapper(Graduation2014, "Piotr loves how Elizabeth is always challenging herself to learn something new.", 2014)
                 , new this.ImageWrapper(BK2015, "In 2015, the couple began planning their move to NYC.", 2015)
                 , new this.ImageWrapper(Brooklyner2015, "After moving to Brooklyn, they discovered the joys of having a roof deck.", 2015)
@@ -57,7 +57,7 @@ class PhotoGallery extends Component {
                 , new this.ImageWrapper(Engaged2017, "They spent the weekend celebrating and sharing their big news with family and friends!", 2017)
                 , new this.ImageWrapper(Planning2017, "Elizabeth was delighted to spend the Summer of 2017 planning their wedding!", 2017)
                 , new this.ImageWrapper(Romantic, "She cant wait to marry the love of her life in November 2018 and is most looking forward to their First Look!", 2017)
-                , new this.ImageWrapper(DC, "Piotr is most looking forward celebrating with all of their family and friends in one room!", 2017)
+                , new this.ImageWrapper(DC, "Piotr is most looking forward to celebrating with all of their family and friends in one room!", 2017)
             ]
             , currentImageIndex: 0
         };

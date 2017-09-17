@@ -20,7 +20,7 @@ class BigDay extends Component {
                     </div>
 
                     We would like to thank you all so much for journeying to celebrate this special day with us - especially all of our out of town guests!
-                    We know all that traveling entails and can not express how much this means to us! We are so greatly looking forward to celebrating our love with you!
+                    We know what traveling entails and can not express how much this means to us! We are so greatly looking forward to celebrating with you!
 
 
                     <br/><h3>Accommodations</h3>

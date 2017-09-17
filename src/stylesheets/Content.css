@@ -156,7 +156,7 @@ div[class*='content-block-image'] {
     }
 
     .content-block-text-photo-gallery-caption {
-        min-height: 80px;
+        min-height: 100px;
         font-size: x-large;
     }
 
@@ -260,7 +260,7 @@ div[class*='content-block-image'] {
     }
 
     .content-block-text-photo-gallery-caption {
-        min-height: 75px;
+        min-height: 90px;
         font-size: medium;
     }
 

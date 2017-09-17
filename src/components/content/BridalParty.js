@@ -42,7 +42,7 @@ class BridalParty extends Component {
             "Pawel will be standing next to him on his wedding day.";
 
         const CLAIRE = "Claire";
-        const CLAIRE_DESCRIPTION = "Claire vividly remembers the day she first saw Elizabeth & Piotr walk into the MSPCA. After waiting several months, she couldn't" +
+        const CLAIRE_DESCRIPTION = "Claire vividly remembers the day she first saw Elizabeth & Piotr walk into the MSPCA. After waiting several months, she couldn't " +
             "believe her luck when they chose her! She was overjoyed to finally be going home!" +
             "<br/><br/>She was equally excited that her new family changed her name from\n" +
             "\"Orangie\" to\n" +
@@ -233,7 +233,7 @@ class BridalParty extends Component {
                     <br/>
                     <div className="content-block-bridal-party-animals-note">
                         Elizabeth and Piotr feel very passionately about rescuing animals.
-                        <br/>As part of the wedding, we will be making a donation to the
+                        <br/>As part of the wedding, they will be making a donation to the
                         <a href="https://www.mspca.org/"
                            className="content-block-bridal-party-mspca-link" target="_blank" rel="noopener noreferrer">
                             {MSPCA}

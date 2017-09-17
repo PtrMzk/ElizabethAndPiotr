@@ -22,7 +22,7 @@ class OurStory extends Component {
                     While there is some debate over who made the first move, the two quickly became inseparable as they explored their new school. <br/><br/>
 
                     Piotr claims he wooed Elizabeth with his face-melting guitar solos,
-                    although she remembers being drawn in by his witty humor and their shared love of horror movies.<br/><br/>
+                    although she remembers being drawn in by his witty humor and shared love of horror movies.<br/><br/>
                     Elizabeth recalls charming Piotr with her dramatic storytelling,
                     although he swears it was her "exotic NJ accent" and dazzling smile.<br/><br/>
 
