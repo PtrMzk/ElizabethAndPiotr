@@ -1,1 +1,1 @@
-Wedding Website for myself and Liz
+Wedding Website for myself and my fiancee
