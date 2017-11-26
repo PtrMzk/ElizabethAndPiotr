@@ -148,7 +148,7 @@ div[class*='content-block-image'] {
     }
 
     .content-block-image-photo-gallery {
-        height: 500px;
+        height: 350px;
     }
 
     .content-block-bridal-party-mobile-tables {
@@ -156,13 +156,13 @@ div[class*='content-block-image'] {
     }
 
     .content-block-text-photo-gallery-caption {
-        min-height: 100px;
+        min-height: 80px;
         font-size: x-large;
     }
 
     .content-block-text-photo-gallery-year {
         padding-top: 10px;
-        min-height: 70px;
+        min-height: 60px;
         font-size: 70px;
         font-weight: bold;
     }
