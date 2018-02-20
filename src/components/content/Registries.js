@@ -31,10 +31,10 @@ class Registries extends Component {
                        target="_blank" rel="noopener noreferrer">
                         <div className="content-block-text-registry-link">Amazon</div>
                     </a>
-                    <a href="https://www.crateandbarrel.com/gift-registry/elizabeth-lipman-and-piotr-mikolajczyk/r5726290"
-                       target="_blank" rel="noopener noreferrer">
-                        <div className="content-block-text-registry-link">Crate & Barrel</div>
-                    </a>
+                    {/*<a href="https://www.crateandbarrel.com/gift-registry/elizabeth-lipman-and-piotr-mikolajczyk/r5726290"*/}
+                       {/*target="_blank" rel="noopener noreferrer">*/}
+                        {/*<div className="content-block-text-registry-link">Crate & Barrel</div>*/}
+                    {/*</a>*/}
 
                 </div>
             </div>
