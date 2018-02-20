@@ -19,8 +19,7 @@ class Registries extends Component {
                     <div className="content-block-title">
                         Registries
                     </div>
-                    <a href="https://en.wikipedia.org/wiki/United_States_dollar"
-                       target="_blank" rel="noopener noreferrer">
+                    <a>
                         <div className="content-block-text-registry-link">First Home Fund</div>
                     </a>
                     <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=544902931&eventType=Wedding&pwsurl="
