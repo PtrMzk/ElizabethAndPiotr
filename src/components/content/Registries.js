@@ -19,9 +19,9 @@ class Registries extends Component {
                     <div className="content-block-title">
                         Registries
                     </div>
-                    <a>
-                        <div className="content-block-text-registry-link">First Home Fund</div>
-                    </a>
+
+                    <div className="content-block-text-registry-link">First Home Fund</div>
+
                     <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=544902931&eventType=Wedding&pwsurl="
                        target="_blank" rel="noopener noreferrer">
                         <div className="content-block-text-registry-link">Bed Bath and Beyond</div>
