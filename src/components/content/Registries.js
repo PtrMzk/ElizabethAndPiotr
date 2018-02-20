@@ -31,6 +31,10 @@ class Registries extends Component {
                        target="_blank" rel="noopener noreferrer">
                         <div className="content-block-text-registry-link">Crate & Barrel</div>
                     </a>
+                    <a href="https://en.wikipedia.org/wiki/United_States_dollar"
+                       target="_blank" rel="noopener noreferrer">
+                        <div className="content-block-text-registry-link">First Home Fund</div>
+                    </a>
 
                 </div>
             </div>

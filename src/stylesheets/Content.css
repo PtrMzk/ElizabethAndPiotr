@@ -161,9 +161,9 @@ div[class*='content-block-image'] {
     }
 
     .content-block-text-photo-gallery-year {
-        padding-top: 10px;
-        min-height: 60px;
-        font-size: 70px;
+        padding-top: 5px;
+        min-height: 40px;
+        font-size: 40px;
         font-weight: bold;
     }
 
@@ -265,9 +265,9 @@ div[class*='content-block-image'] {
     }
 
     .content-block-text-photo-gallery-year {
-        padding-top: 10px;
-        min-height: 40px;
-        font-size: 40px;
+        padding-top: 5px;
+        min-height: 30px;
+        font-size: 30px;
         font-weight: bold;
     }
 
