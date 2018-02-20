@@ -56,7 +56,7 @@ class WeddingOverview extends Component {
                     </div>
 
                     <h3>Date</h3>
-                    Saturday, November 3, 2018
+                    The Evening of November 3rd, 2018
                     <br/><br/>
 
                     <h3>Ceremony and Reception</h3>

@@ -19,6 +19,10 @@ class Registries extends Component {
                     <div className="content-block-title">
                         Registries
                     </div>
+                    <a href="https://en.wikipedia.org/wiki/United_States_dollar"
+                       target="_blank" rel="noopener noreferrer">
+                        <div className="content-block-text-registry-link">First Home Fund</div>
+                    </a>
                     <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=544902931&eventType=Wedding&pwsurl="
                        target="_blank" rel="noopener noreferrer">
                         <div className="content-block-text-registry-link">Bed Bath and Beyond</div>
@@ -30,10 +34,6 @@ class Registries extends Component {
                     <a href="https://www.crateandbarrel.com/gift-registry/elizabeth-lipman-and-piotr-mikolajczyk/r5726290"
                        target="_blank" rel="noopener noreferrer">
                         <div className="content-block-text-registry-link">Crate & Barrel</div>
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/United_States_dollar"
-                       target="_blank" rel="noopener noreferrer">
-                        <div className="content-block-text-registry-link">First Home Fund</div>
                     </a>
 
                 </div>
